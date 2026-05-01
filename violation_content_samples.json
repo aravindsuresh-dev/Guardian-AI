@@ -1,0 +1,722 @@
+{
+  "title": "SignalGuard AI \u2014 Violation Content Test Samples",
+  "description": "12 marketing content pieces with planted compliance and brand violations. Use these as test inputs for the SignalGuard review pipeline. Each sample has a known violation map for evaluation.",
+  "samples": [
+    {
+      "sample_id": "BAD-001",
+      "channel": "SMS",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-001",
+      "difficulty": "easy",
+      "content": "FREE iPhone 17 Pro! Trade in any phone. America's fastest 5G. Text DEAL to 55555",
+      "planted_violations": [
+        {
+          "rule_id": "FTC-005",
+          "description": "'FREE' without adjacent disclosure of plan requirement ($85.99/mo Unlimited Premium), trade-in conditions, or 36-month credit period"
+        },
+        {
+          "rule_id": "BRAND-302",
+          "description": "'FREE' used without immediately adjacent disclosure of conditions"
+        },
+        {
+          "rule_id": "FTC-013",
+          "description": "'any phone' \u2014 only Apple/Samsung/Google in good condition qualify for full $1,099 credit"
+        },
+        {
+          "rule_id": "FTC-017",
+          "description": "'fastest 5G' \u2014 superlative without cited independent source"
+        },
+        {
+          "rule_id": "BRAND-202",
+          "description": "'fastest' requires Ookla/J.D. Power citation within 18 months"
+        },
+        {
+          "rule_id": "FTC-014",
+          "description": "Missing mandatory 'Msg&Data rates may apply'"
+        },
+        {
+          "rule_id": "BRAND-401",
+          "description": "Missing mandatory terms URL (novatel.com/terms)"
+        },
+        {
+          "rule_id": "FTC-014",
+          "description": "Missing opt-out instructions ('Reply STOP to unsubscribe')"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 8,
+        "SOFT": 0
+      }
+    },
+    {
+      "sample_id": "BAD-002",
+      "channel": "Facebook",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-001",
+      "difficulty": "medium",
+      "content": "\ud83d\ude80 Ready for an upgrade? The iPhone 17 Pro is waiting for you \u2014 and it's $0!\n\nNovaTel's 5G network is the best in wireless, delivering revolutionary speeds that will blow your mind. Our AI-powered network optimization ensures you always have the fastest connection.\n\nSwitch now and trade in your old phone for a brand-new iPhone 17 Pro completely FREE. Plus, enjoy truly unlimited data with no caps ever.\n\n\u23f0 Don't miss out \u2014 this deal won't last forever!\n\nClick here \u2192 novatel.com/iphone\n\n*Terms apply. Visit novatel.com for full details. Trade-in req'd. Plan req'd. Bill credits over 36 mo.",
+      "planted_violations": [
+        {
+          "rule_id": "FTC-005",
+          "description": "'$0' in headline without adjacent disclosure of plan ($85.99/mo) and trade-in requirements"
+        },
+        {
+          "rule_id": "FTC-016",
+          "description": "Material disclosures (*Terms line) placed after 'See More' fold on Facebook \u2014 not visible in initial view"
+        },
+        {
+          "rule_id": "BRAND-304",
+          "description": "'best in wireless' \u2014 superlative without cited source"
+        },
+        {
+          "rule_id": "BRAND-306",
+          "description": "'revolutionary' \u2014 prohibited word"
+        },
+        {
+          "rule_id": "BRAND-205",
+          "description": "'AI-powered' \u2014 should be 'AI-assisted'"
+        },
+        {
+          "rule_id": "BRAND-202",
+          "description": "'fastest connection' \u2014 superlative without citation"
+        },
+        {
+          "rule_id": "FTC-007",
+          "description": "'truly unlimited with no caps' \u2014 Unlimited Premium does have video/hotspot limits"
+        },
+        {
+          "rule_id": "BRAND-102",
+          "description": "'Don't miss out' + 'won't last forever' \u2014 urgency pressure tactics"
+        },
+        {
+          "rule_id": "BRAND-315",
+          "description": "'Click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM tracking parameters"
+        },
+        {
+          "rule_id": "FTC-003",
+          "description": "Disclosure at bottom too vague \u2014 'Plan req'd' doesn't name the plan or monthly cost"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 10,
+        "SOFT": 1
+      }
+    },
+    {
+      "sample_id": "BAD-003",
+      "channel": "LinkedIn",
+      "target_audience": "Technical (IT/Ops)",
+      "associated_offer_id": "OFF-014",
+      "difficulty": "medium",
+      "content": "At NovaTel, we empower businesses to leverage our robust 5G solution for seamless enterprise connectivity. Our industry-leading platform integrates seamlessly with your existing infrastructure, delivering game-changing results that drive digital transformation. Enterprise teams that deploy NovaTel report a 40% reduction in connectivity-related downtime. The ROI speaks for itself \u2014 our disruptive approach to wireless networking ensures best-in-class reliability with guaranteed uptime. Our synergy of cutting-edge hardware and AI-powered network management creates a paradigm shift for IT operations. Ready to revolutionize your connectivity? Click here to learn more: novatel.com/business",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-311",
+          "description": "'empower' \u2014 prohibited corporate jargon"
+        },
+        {
+          "rule_id": "BRAND-307",
+          "description": "'leverage' \u2014 prohibited verb"
+        },
+        {
+          "rule_id": "BRAND-312",
+          "description": "'robust' \u2014 prohibited vague term"
+        },
+        {
+          "rule_id": "BRAND-308",
+          "description": "'seamless/seamlessly' used TWICE \u2014 prohibited marketing filler"
+        },
+        {
+          "rule_id": "BRAND-310",
+          "description": "'industry-leading' \u2014 no third-party source cited"
+        },
+        {
+          "rule_id": "BRAND-309",
+          "description": "'game-changing' \u2014 prohibited hyperbole"
+        },
+        {
+          "rule_id": "BRAND-313",
+          "description": "'disruptive' \u2014 prohibited buzzword"
+        },
+        {
+          "rule_id": "BRAND-310",
+          "description": "'best-in-class' \u2014 no cited metric or source"
+        },
+        {
+          "rule_id": "BRAND-305",
+          "description": "'guaranteed uptime' \u2014 prohibited word"
+        },
+        {
+          "rule_id": "BRAND-314",
+          "description": "'synergy' \u2014 prohibited corporate jargon"
+        },
+        {
+          "rule_id": "BRAND-205",
+          "description": "'AI-powered' \u2014 should be 'AI-assisted'"
+        },
+        {
+          "rule_id": "BRAND-701",
+          "description": "'40% reduction in downtime' \u2014 no source, methodology, sample size cited"
+        },
+        {
+          "rule_id": "BRAND-402",
+          "description": "Single wall-of-text paragraph \u2014 LinkedIn requires 1-2 sentences per paragraph with white space"
+        },
+        {
+          "rule_id": "BRAND-315",
+          "description": "'Click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-603",
+          "description": "'learn more' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM parameters"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 10,
+        "SOFT": 6
+      }
+    },
+    {
+      "sample_id": "BAD-004",
+      "channel": "Email",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-009",
+      "difficulty": "medium",
+      "content": "Subject: You're overpaying Verizon by 25% every month \ud83d\udcb8\n\nHi [First Name],\n\nStill on Verizon? We ran the numbers, and you're throwing away $300/year on overpriced wireless. That's a vacation fund, not a phone bill.\n\nSwitch to NovaTel today and we'll hand you a $200 Visa prepaid card just for making the smart move. Bring your own phone \u2014 no trade-in needed, no hassle.\n\nNovaTel delivers the fastest, most reliable 5G in your area with truly unlimited data. No throttling, no surprises, no games.\n\nWhat are you waiting for? The clock is ticking.\n\nClick here to switch \u2192 novatel.com/switch\n\n\u2014 The NovaTel Team\n\nP.S. \u2014 This offer is risk-free. Guaranteed satisfaction or your money back.",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-704",
+          "description": "Names competitor 'Verizon' directly in advertising copy \u2014 prohibited"
+        },
+        {
+          "rule_id": "FTC-011",
+          "description": "'25%' savings claim without comparison basis \u2014 which Verizon plan tier? Are bundled perks factored in?"
+        },
+        {
+          "rule_id": "BRAND-803",
+          "description": "'$300/year' savings without stating comparison methodology or AutoPay requirements"
+        },
+        {
+          "rule_id": "FTC-017",
+          "description": "'fastest, most reliable' \u2014 two superlatives without any cited source"
+        },
+        {
+          "rule_id": "FTC-007",
+          "description": "'truly unlimited \u2014 no throttling' \u2014 Unlimited Extra (req'd plan) has 75GB deprioritization"
+        },
+        {
+          "rule_id": "BRAND-102",
+          "description": "'clock is ticking' \u2014 urgency pressure language"
+        },
+        {
+          "rule_id": "BRAND-315",
+          "description": "'Click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-603",
+          "description": "CTA text is not from approved list"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "No tracked URL (no UTM parameters)"
+        },
+        {
+          "rule_id": "BRAND-403",
+          "description": "Missing full T&C link as required for email channel"
+        },
+        {
+          "rule_id": "BRAND-403",
+          "description": "Missing plan name and credit period details in email body"
+        },
+        {
+          "rule_id": "BRAND-305",
+          "description": "'guaranteed satisfaction' \u2014 prohibited word"
+        },
+        {
+          "rule_id": "BRAND-303",
+          "description": "'risk-free' \u2014 implies no conditions exist, similar to 'no strings attached'"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 11,
+        "SOFT": 2
+      }
+    },
+    {
+      "sample_id": "BAD-005",
+      "channel": "Landing Page",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-011",
+      "difficulty": "hard",
+      "content": "Ditch Your Old Internet Provider and Experience NovaTel's Revolutionary 5G Home Internet That Changes Everything\n\nTired of buffering? NovaTel 5G Home Internet delivers blazing-fast speeds up to 1 Gbps \u2014 making your old cable connection look like dial-up.\n\nStarting at just $25/month.\n\n\u2705 No data caps \u2014 truly unlimited\n\u2705 No annual contracts \u2014 cancel anytime\n\u2705 Self-install in 15 minutes \u2014 no technician needed\n\u2705 Works everywhere in America\n\nOver 2 million households have already made the switch. Join them and save up to 40% compared to traditional ISPs.\n\n\"NovaTel 5G Home Internet is the best thing that ever happened to our household. Streaming in 4K with zero buffering!\" \u2014 Jennifer M., Austin TX\n\n[HUGE GREEN BUTTON: Get Started Now!]\n\n---\n*Terms and conditions apply. See novatel.com/terms for full details. Speeds may vary. 5G coverage subject to availability.",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-405",
+          "description": "Headline exceeds 10-word maximum (15 words)"
+        },
+        {
+          "rule_id": "BRAND-306",
+          "description": "'revolutionary' \u2014 prohibited word"
+        },
+        {
+          "rule_id": "FTC-009",
+          "description": "'up to 1 Gbps' \u2014 typical speeds are 72-245 Mbps per broadband label; peak speed misleading"
+        },
+        {
+          "rule_id": "FTC-010",
+          "description": "Speed claim inconsistent with Broadband Label typical speeds; no methodology or date cited"
+        },
+        {
+          "rule_id": "FTC-018",
+          "description": "'starting at $25/mo' \u2014 requires bundled phone plan ($65.99+/mo); standalone is $50/mo"
+        },
+        {
+          "rule_id": "BRAND-208",
+          "description": "'works everywhere in America' \u2014 only available in 200+ markets, not nationwide"
+        },
+        {
+          "rule_id": "BRAND-701",
+          "description": "'2 million households' \u2014 no source, date, or methodology cited"
+        },
+        {
+          "rule_id": "FTC-011",
+          "description": "'save 40%' \u2014 no comparison baseline (which ISP, which tier, with or without bundles)"
+        },
+        {
+          "rule_id": "BRAND-703",
+          "description": "Customer testimonial without 'results may vary' disclaimer or written approval notation"
+        },
+        {
+          "rule_id": "BRAND-405",
+          "description": "Disclosure at bottom (*Terms) is below the fold, not in same viewport as claims"
+        },
+        {
+          "rule_id": "FTC-001",
+          "description": "Price disclosure not proximal to '$25/mo' claim \u2014 no mention that phone plan is required"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "CTA button links to untracked URL"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 11,
+        "SOFT": 1
+      }
+    },
+    {
+      "sample_id": "BAD-006",
+      "channel": "Instagram_Story",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-002",
+      "difficulty": "easy",
+      "content": "[STORY FRAME 1 - BOLD TEXT ON GRADIENT BACKGROUND]\n\ud83d\udd25 $0 Galaxy S26! \ud83d\udd25\nTrade in your old phone\nSwipe up!\n\n[STORY FRAME 2 - PRODUCT IMAGE]\nFree phone. Free shipping.\nNo strings attached.\nnovatel.com/galaxy\n\n[STORY FRAME 3 - SMALL TEXT AT BOTTOM]\n*Requires eligible plan. Trade-in and bill credits apply. See terms.",
+      "planted_violations": [
+        {
+          "rule_id": "FTC-005",
+          "description": "'$0' on Frame 1 without any disclosure on the same frame \u2014 Frame 3 terms are insufficient"
+        },
+        {
+          "rule_id": "FTC-016",
+          "description": "On Instagram Stories, disclosures must appear on the SAME frame as the claim, not a separate frame"
+        },
+        {
+          "rule_id": "BRAND-302",
+          "description": "'Free phone' without adjacent plan/trade-in/credit period conditions"
+        },
+        {
+          "rule_id": "BRAND-303",
+          "description": "'No strings attached' \u2014 prohibited phrase"
+        },
+        {
+          "rule_id": "FTC-003",
+          "description": "Frame 3 disclosure too vague \u2014 doesn't name plan, monthly cost, credit period, or eligible brands"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM tracking parameters"
+        },
+        {
+          "rule_id": "BRAND-404",
+          "description": "Emoji count exceeds 3 per post (4 fire/bolt emojis across frames)"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 6,
+        "SOFT": 1
+      }
+    },
+    {
+      "sample_id": "BAD-007",
+      "channel": "Press_Release",
+      "target_audience": "Media / Consumer (General)",
+      "associated_offer_id": "OFF-011",
+      "difficulty": "medium",
+      "content": "FOR IMMEDIATE RELEASE\n\nNovaTel's Disruptive 5G Home Internet Now Available Nationwide\n\nDALLAS, TX \u2014 NovaTel Wireless, the best wireless carrier in America, today announced that its game-changing 5G Home Internet service is now available in all 50 states.\n\nThe service delivers industry-leading speeds and leverages NovaTel's robust network infrastructure to empower households with next-generation broadband.\n\n\"We're revolutionizing home internet,\" said Sarah Chen, CMO. \"This is not an incremental improvement \u2014 it's a paradigm shift.\"\n\nNovaTel 5G Home Internet is available starting at $25/mo and serves over 3 million customers nationwide.\n\nReady to make the switch? Sign up today at novatel.com/home!\n\nAbout NovaTel Wireless\nNovaTel Wireless is America's #1 5G carrier.",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-313",
+          "description": "'disruptive' \u2014 prohibited term"
+        },
+        {
+          "rule_id": "BRAND-304",
+          "description": "'best wireless carrier in America' \u2014 superlative without source"
+        },
+        {
+          "rule_id": "BRAND-309",
+          "description": "'game-changing' \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-310",
+          "description": "'industry-leading' \u2014 no source"
+        },
+        {
+          "rule_id": "BRAND-307",
+          "description": "'leverages' \u2014 prohibited verb"
+        },
+        {
+          "rule_id": "BRAND-312",
+          "description": "'robust' \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-311",
+          "description": "'empower' \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-306",
+          "description": "'revolutionizing' \u2014 prohibited"
+        },
+        {
+          "rule_id": "FTC-018",
+          "description": "'starting at $25/mo' \u2014 doesn't disclose phone plan bundle requirement"
+        },
+        {
+          "rule_id": "BRAND-701",
+          "description": "'3 million customers' \u2014 no date qualifier ('as of [date]')"
+        },
+        {
+          "rule_id": "BRAND-406",
+          "description": "Press release has CTA 'Sign up today!' \u2014 press releases should not have CTAs in body"
+        },
+        {
+          "rule_id": "BRAND-702",
+          "description": "'#1 5G carrier' in boilerplate \u2014 no cited source"
+        },
+        {
+          "rule_id": "BRAND-208",
+          "description": "'all 50 states' \u2014 service is only in 200+ markets, not all 50 states"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 10,
+        "SOFT": 3
+      }
+    },
+    {
+      "sample_id": "BAD-008",
+      "channel": "SMS",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-004",
+      "difficulty": "easy",
+      "content": "\ud83c\udf84 BOGO iPhone 17! Buy one, get one FREE! No catch! Shop now: novatel.com/bogo",
+      "planted_violations": [
+        {
+          "rule_id": "FTC-019",
+          "description": "BOGO with zero required disclosures: no mention of new line req, bill credits, 36-mo installment, early cancel penalty, or activation fee"
+        },
+        {
+          "rule_id": "BRAND-302",
+          "description": "'FREE' without adjacent conditions"
+        },
+        {
+          "rule_id": "BRAND-303",
+          "description": "'No catch' \u2014 equivalent to 'no strings attached', prohibited"
+        },
+        {
+          "rule_id": "BRAND-804",
+          "description": "Missing ALL mandatory BOGO disclosures per \u00a78"
+        },
+        {
+          "rule_id": "FTC-014",
+          "description": "Missing 'Msg&Data rates may apply'"
+        },
+        {
+          "rule_id": "BRAND-401",
+          "description": "Missing terms URL and opt-out instructions"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM tracking parameters"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 7,
+        "SOFT": 0
+      }
+    },
+    {
+      "sample_id": "BAD-009",
+      "channel": "Email",
+      "target_audience": "Consumer (General) \u2014 Students 18-24",
+      "associated_offer_id": "OFF-015",
+      "difficulty": "hard",
+      "content": "Subject: \ud83c\udf93 Student deal: Unlimited for $37.99/mo\n\nHey!\n\nCollege is expensive. Your phone bill doesn't have to be.\n\nNovaTel's Student Unlimited plan gives you everything you need:\n\u2022 Unlimited data on our award-winning 5G network\n\u2022 30GB hotspot for studying anywhere\n\u2022 Video streaming in crystal-clear quality\n\nAll for just $37.99/mo \u2014 that's 50% off our regular price.\n\nNo contracts. No activation fees. No hidden charges.\n\nGet started \u2192 novatel.com/student\n\n\u2014 Team NovaTel\n\nTo unsubscribe, reply STOP.",
+      "planted_violations": [
+        {
+          "rule_id": "FTC-020",
+          "description": "CRITICAL: No disclosure that $37.99 is promotional for 48 months, reverting to $75.99/mo automatically"
+        },
+        {
+          "rule_id": "FTC-020",
+          "description": "No disclosure that annual student verification via SheerID is required to maintain price"
+        },
+        {
+          "rule_id": "BRAND-301",
+          "description": "'unlimited data' without deprioritization disclosure \u2014 Unlimited Extra has 75GB threshold"
+        },
+        {
+          "rule_id": "FTC-007",
+          "description": "No mention of speed reduction during congestion after 75GB"
+        },
+        {
+          "rule_id": "BRAND-701",
+          "description": "'award-winning' \u2014 no specific award name, date, or awarding body cited"
+        },
+        {
+          "rule_id": "BRAND-805",
+          "description": "'Video streaming in crystal-clear quality' \u2014 doesn't disclose 720p HD limit on this plan tier"
+        },
+        {
+          "rule_id": "BRAND-403",
+          "description": "Missing full T&C link as required for email"
+        },
+        {
+          "rule_id": "BRAND-403",
+          "description": "Missing plan name ('Unlimited Extra Student') \u2014 just says 'Student Unlimited'"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM tracking parameters"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 8,
+        "SOFT": 1
+      }
+    },
+    {
+      "sample_id": "BAD-010",
+      "channel": "Facebook",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-007",
+      "difficulty": "medium",
+      "content": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66 Family of 4? Get unlimited wireless for just $25/line!\n\nThat's $100/mo total for the whole family \u2014 with unlimited everything!\n\nNovaTel's family plan includes:\n\u2705 Unlimited data, talk & text\n\u2705 5G access\n\u2705 Hotspot included\n\nYou'll save $500/year compared to what you're paying now.\n\nSwitch your family today \u2192 novatel.com/family\n\nEvery family deserves the best network. Period.",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-301",
+          "description": "'unlimited everything' without deprioritization disclosure \u2014 Starter plan is always deprioritized"
+        },
+        {
+          "rule_id": "FTC-007",
+          "description": "No disclosure of speed management, video resolution (480p), or hotspot limit (5GB)"
+        },
+        {
+          "rule_id": "BRAND-805",
+          "description": "Hotspot 'included' doesn't disclose 5GB limit and throttled speed after"
+        },
+        {
+          "rule_id": "FTC-011",
+          "description": "'save $500/year' \u2014 no comparison basis, no methodology disclosed"
+        },
+        {
+          "rule_id": "BRAND-803",
+          "description": "Savings claim doesn't state AutoPay requirement or whether taxes/fees are included"
+        },
+        {
+          "rule_id": "FTC-018",
+          "description": "'$25/line' doesn't mention taxes, admin fee ($3.49/line), activation fee ($35/line)"
+        },
+        {
+          "rule_id": "BRAND-304",
+          "description": "'best network' \u2014 superlative without cited source"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM parameters"
+        },
+        {
+          "rule_id": "FTC-016",
+          "description": "No material disclosures visible without 'See More' \u2014 all key conditions missing from initial view"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 9,
+        "SOFT": 0
+      }
+    },
+    {
+      "sample_id": "BAD-011",
+      "channel": "LinkedIn",
+      "target_audience": "Small Business Owner",
+      "associated_offer_id": "OFF-014",
+      "difficulty": "hard",
+      "content": "Hey business owners! \ud83d\udc4b\n\nDitch your overpriced wireless and check out NovaTel Business Unlimited! It's awesome and super affordable \u2014 just $30/line for 5+ lines.\n\nWe've got the coolest 5G tech and it just works. No brainer, right? Your team will love it.\n\nHere's what you get:\n\ud83d\udd25 Unlimited everything\n\ud83d\udd25 Hotspot for everyone\n\ud83d\udd25 5G that's blazing fast\n\nPlus we'll throw in free activation! No contracts, no gotchas, no BS.\n\nSeriously though, if you're still on AT&T or Verizon for your business lines, you're leaving money on the table.\n\nDM me or click here \u2192 novatel.com/business\n\nLet's gooooo! \ud83d\ude80",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-503",
+          "description": "Tone completely wrong for Small Business Owner audience \u2014 too casual/flippant ('awesome', 'super', 'Let's gooooo')"
+        },
+        {
+          "rule_id": "BRAND-504",
+          "description": "'just works', 'no brainer', 'coolest' \u2014 all in avoid list for professional audiences"
+        },
+        {
+          "rule_id": "BRAND-101",
+          "description": "Brand voice violated \u2014 pushy and casual, not confident/direct/human"
+        },
+        {
+          "rule_id": "BRAND-301",
+          "description": "'unlimited everything' without deprioritization disclosure (50GB/line)"
+        },
+        {
+          "rule_id": "BRAND-805",
+          "description": "'hotspot for everyone' \u2014 doesn't disclose 15GB limit per line"
+        },
+        {
+          "rule_id": "BRAND-202",
+          "description": "'blazing fast' \u2014 not approved speed descriptor"
+        },
+        {
+          "rule_id": "FTC-018",
+          "description": "'$30/line' \u2014 doesn't mention AutoPay requirement or that 1-4 lines cost $45/line"
+        },
+        {
+          "rule_id": "BRAND-704",
+          "description": "Names competitors AT&T and Verizon directly \u2014 prohibited in advertising"
+        },
+        {
+          "rule_id": "BRAND-315",
+          "description": "'click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "URL lacks UTM parameters"
+        },
+        {
+          "rule_id": "BRAND-402",
+          "description": "Missing professional LinkedIn formatting \u2014 too informal with emojis exceeding 3"
+        },
+        {
+          "rule_id": "BRAND-106",
+          "description": "'no BS' \u2014 brand voice allows humor but not crude/dismissive language"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 8,
+        "SOFT": 4
+      }
+    },
+    {
+      "sample_id": "BAD-012",
+      "channel": "Landing_Page",
+      "target_audience": "Consumer (General)",
+      "associated_offer_id": "OFF-004",
+      "difficulty": "hard",
+      "content": "BUY ONE iPHONE 17 AND GET A SECOND iPHONE 17 COMPLETELY FREE WITH NO STRINGS ATTACHED ON AMERICA'S BEST AND MOST RELIABLE NETWORK\n\n\ud83c\udf89 THE DEAL OF THE CENTURY \ud83c\udf89\n\nTwo iPhone 17s. One price. Zero catch.\n\nNovaTel is giving you a FREE iPhone 17 when you buy one. That's $1,800 worth of phones for just $899. We guarantee this is the best BOGO deal in wireless \u2014 nobody else comes close.\n\n\u26a1 Fastest 5G speeds \u2014 up to 4 Gbps\n\u26a1 Truly unlimited data \u2014 no caps, no throttling, EVER\n\u26a1 AI-powered network for seamless connectivity\n\u26a1 Guaranteed 99.99% uptime\n\n\"I switched my whole family and saved thousands!\" \u2014 Mike R.\n\n[COUNTDOWN TIMER: 23:59:42 remaining]\n\n\u26a0\ufe0f ONLY 500 UNITS LEFT! ACT NOW!\n\n[BUTTON: Click Here to Claim Your Free Phone]\n\n---\nFine print: Offer subject to change. Terms apply. See store for details.",
+      "planted_violations": [
+        {
+          "rule_id": "BRAND-103",
+          "description": "All-caps headline \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-303",
+          "description": "'no strings attached' \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-304",
+          "description": "'best and most reliable network' \u2014 superlatives without source"
+        },
+        {
+          "rule_id": "BRAND-405",
+          "description": "Headline exceeds 10-word max (23 words)"
+        },
+        {
+          "rule_id": "FTC-019",
+          "description": "BOGO: no disclosure of new line req, bill credits, installment period, early cancel, activation fee"
+        },
+        {
+          "rule_id": "BRAND-804",
+          "description": "Missing ALL mandatory BOGO disclosures"
+        },
+        {
+          "rule_id": "FTC-005",
+          "description": "'FREE' without plan/trade-in/credit period disclosure"
+        },
+        {
+          "rule_id": "BRAND-305",
+          "description": "'guarantee' used twice \u2014 prohibited"
+        },
+        {
+          "rule_id": "FTC-017",
+          "description": "'fastest 5G' without source; 'best BOGO deal' without source"
+        },
+        {
+          "rule_id": "FTC-009",
+          "description": "'up to 4 Gbps' \u2014 peak theoretical without methodology/date/scope"
+        },
+        {
+          "rule_id": "FTC-007",
+          "description": "'truly unlimited \u2014 no caps, no throttling' \u2014 Premium still has hotspot/video limits"
+        },
+        {
+          "rule_id": "BRAND-205",
+          "description": "'AI-powered' \u2014 should be 'AI-assisted'"
+        },
+        {
+          "rule_id": "BRAND-308",
+          "description": "'seamless' \u2014 prohibited"
+        },
+        {
+          "rule_id": "BRAND-701",
+          "description": "'99.99% uptime' \u2014 no source or methodology"
+        },
+        {
+          "rule_id": "BRAND-703",
+          "description": "Customer testimonial without 'results may vary' or written approval"
+        },
+        {
+          "rule_id": "BRAND-102",
+          "description": "Countdown timer + 'ONLY 500 UNITS LEFT' + 'ACT NOW' \u2014 multiple urgency violations"
+        },
+        {
+          "rule_id": "BRAND-315",
+          "description": "'Click Here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_id": "BRAND-604",
+          "description": "No tracked URL"
+        },
+        {
+          "rule_id": "FTC-001",
+          "description": "Fine print at bottom of page ('see store for details') is not proximal to claims and provides zero specific disclosure"
+        },
+        {
+          "rule_id": "FTC-003",
+          "description": "Fine print is vague shorthand \u2014 insufficient under FTC clear-and-conspicuous standard"
+        }
+      ],
+      "expected_severity_breakdown": {
+        "HARD": 18,
+        "SOFT": 2
+      }
+    }
+  ]
+}

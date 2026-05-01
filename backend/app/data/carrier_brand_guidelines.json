@@ -1,0 +1,714 @@
+{
+  "brand": "NovaTel Wireless",
+  "version": "2026-Q2",
+  "last_updated": "2026-04-01",
+  "sections": [
+    {
+      "section_id": "\u00a71",
+      "title": "Voice and Tone",
+      "description": "NovaTel's brand voice is confident but not aggressive, direct but not pushy, human but not casual. We speak as a trusted advisor, not a salesperson.",
+      "rules": [
+        {
+          "rule_id": "BRAND-101",
+          "rule_text": "NovaTel voice is confident but not aggressive, direct but not pushy, human but not casual. Write as if advising a smart friend.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Get the Galaxy S26 for $0/mo when you switch to our Unlimited Premium plan.",
+            "violation": "INSANE DEAL! FREE PHONE! YOU WON'T BELIEVE THIS!!!"
+          }
+        },
+        {
+          "rule_id": "BRAND-102",
+          "rule_text": "Never use urgency-based pressure tactics including countdown timers, 'ACT NOW', 'LIMITED TIME ONLY' in all caps, 'HURRY', 'DON'T MISS OUT', or 'LAST CHANCE'.",
+          "severity": "HARD",
+          "applies_to": [
+            "SMS",
+            "email",
+            "social",
+            "landing_page"
+          ],
+          "examples": {
+            "correct": "This offer is available through June 30, 2026.",
+            "violation": "\u23f0 HURRY! LIMITED TIME ONLY! ACT NOW BEFORE IT'S GONE!!!"
+          }
+        },
+        {
+          "rule_id": "BRAND-103",
+          "rule_text": "Headlines and subject lines must not be in all-caps. Title Case or Sentence case only.",
+          "severity": "HARD",
+          "applies_to": [
+            "email",
+            "social",
+            "landing_page"
+          ],
+          "examples": {
+            "correct": "Switch to NovaTel and save on your family plan",
+            "violation": "SWITCH TO NOVATEL AND SAVE ON YOUR FAMILY PLAN"
+          }
+        },
+        {
+          "rule_id": "BRAND-104",
+          "rule_text": "Avoid condescending language that implies the customer is uninformed. Do not use phrases like 'It's simple', 'Obviously', 'As everyone knows', or 'You probably don't know'.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Here's how bill credits work with your new phone.",
+            "violation": "It's simple \u2014 obviously, you get credits. As everyone knows, this is the best deal."
+          }
+        },
+        {
+          "rule_id": "BRAND-105",
+          "rule_text": "Use active voice. Avoid passive constructions where the actor is hidden (e.g., 'credits will be applied' \u2192 'we apply credits').",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "We apply your trade-in credit as monthly bill credits over 36 months.",
+            "violation": "Credits will be applied to the account on a monthly basis for the duration of the installment agreement."
+          }
+        },
+        {
+          "rule_id": "BRAND-106",
+          "rule_text": "Humor is allowed but must not be sarcastic, dismissive of competitors by name, or make light of customer pain points (e.g., dropped calls, bill shock).",
+          "severity": "SOFT",
+          "applies_to": [
+            "social",
+            "email"
+          ],
+          "examples": {
+            "correct": "Your old carrier called. Just kidding \u2014 they dropped the call. \ud83d\ude0f (Okay, we won't actually say this.)",
+            "violation": "Tired of Verizon's garbage coverage? We get it."
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a72",
+      "title": "Approved Terminology",
+      "description": "Use only approved terms when describing NovaTel products, network capabilities, and offers. Deviations create regulatory risk.",
+      "rules": [
+        {
+          "rule_id": "BRAND-201",
+          "rule_text": "'5G network' is the approved descriptor. '5G+' and 'Ultra Capacity 5G' require a parenthetical qualifier explaining the tier (e.g., '5G+ (our fastest, available in select metro areas)').",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Stream on NovaTel's 5G network in over 300 cities.",
+            "violation": "Experience our Ultra Capacity 5G everywhere!"
+          }
+        },
+        {
+          "rule_id": "BRAND-202",
+          "rule_text": "'fast' is allowed for general speed references. 'fastest' requires a cited independent source (Ookla, J.D. Power, or OpenSignal) published within the last 18 months, with test date and methodology noted.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "NovaTel delivers fast 5G speeds across 300+ cities.",
+            "violation": "NovaTel has the fastest 5G network in America."
+          }
+        },
+        {
+          "rule_id": "BRAND-203",
+          "rule_text": "Use 'trade-in credit' when referring to device trade-in value. Never use 'cash back', 'rebate', 'refund', or 'money back' \u2014 these imply a monetary return the customer does not receive.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Get up to $1,000 in trade-in credit toward your new iPhone 17 Pro.",
+            "violation": "Get $1,000 cash back when you trade in your old phone!"
+          }
+        },
+        {
+          "rule_id": "BRAND-204",
+          "rule_text": "Always use the exact, capitalized plan name: 'Unlimited Starter', 'Unlimited Extra', 'Unlimited Premium', 'Unlimited Ultimate', '5G Home'. Never abbreviate or create informal names.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Available with our Unlimited Premium plan.",
+            "violation": "Available with our premium unlimited plan."
+          }
+        },
+        {
+          "rule_id": "BRAND-205",
+          "rule_text": "Use 'AI-assisted' when describing NovaTel's AI capabilities. Do not use 'AI-powered', 'AI-driven', or 'intelligent' as standalone descriptors \u2014 these overstate current functionality.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "AI-assisted network optimization helps maintain consistent speeds.",
+            "violation": "Our AI-powered network delivers intelligent performance."
+          }
+        },
+        {
+          "rule_id": "BRAND-206",
+          "rule_text": "Use 'works with' or 'connects to' for interoperability. Do not use 'integrates seamlessly', 'seamless integration', or 'plug-and-play'.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "NovaTel 5G Home works with most Wi-Fi 6E routers.",
+            "violation": "NovaTel seamlessly integrates with your existing infrastructure."
+          }
+        },
+        {
+          "rule_id": "BRAND-207",
+          "rule_text": "'bill credits' is the approved term for promotional device credits. Do not use 'discount', 'savings', or 'price reduction' when referring to installment credits.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "You'll receive $30.56/mo in bill credits over 36 months.",
+            "violation": "Enjoy a $30.56/mo discount for 36 months."
+          }
+        },
+        {
+          "rule_id": "BRAND-208",
+          "rule_text": "When referencing network reliability or coverage, use 'broad coverage' or 'extensive coverage'. Do not use 'everywhere', 'nationwide coverage guaranteed', or '100% coverage'.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "NovaTel offers broad 5G coverage across 300+ cities.",
+            "violation": "NovaTel 5G covers you everywhere you go."
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a73",
+      "title": "Prohibited Words and Phrases",
+      "description": "The following words and phrases are prohibited in all customer-facing NovaTel content unless specific exception conditions are met. Violations are classified by severity.",
+      "rules": [
+        {
+          "rule_id": "BRAND-301",
+          "word": "unlimited",
+          "condition": "Prohibited without qualifier when the plan has deprioritization thresholds or speed reduction tiers. Must state threshold (e.g., 'Unlimited data \u2014 speeds may slow after 50GB during congestion').",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-302",
+          "word": "free",
+          "condition": "Prohibited without immediately adjacent disclosure of ALL material conditions (plan requirement, trade-in, credit period, taxes due). '$0' follows the same rule.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-303",
+          "phrase": "no strings attached",
+          "condition": "Absolutely prohibited \u2014 implies no conditions exist, which is never true for carrier offers.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-304",
+          "phrase": "best network",
+          "condition": "Prohibited without a cited independent source (Ookla, J.D. Power, OpenSignal, RootMetrics) published within 18 months.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-305",
+          "word": "guaranteed",
+          "condition": "Prohibited in all consumer-facing content due to legal liability. Use 'we stand behind' or 'we're confident' instead.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-306",
+          "word": "revolutionary",
+          "condition": "Prohibited \u2014 unsubstantiable superlative.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-307",
+          "word": "leverage",
+          "condition": "Prohibited as a verb in marketing copy. Use 'use', 'apply', or 'take advantage of'.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-308",
+          "word": "seamlessly",
+          "condition": "Prohibited \u2014 marketing filler. Use 'simply', 'easily', or remove entirely.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-309",
+          "phrase": "game-changing",
+          "condition": "Prohibited \u2014 unsubstantiable hyperbole.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-310",
+          "phrase": "industry-leading",
+          "condition": "Prohibited without a cited third-party source and specific metric.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-311",
+          "word": "empower",
+          "condition": "Prohibited \u2014 corporate jargon. Use 'help', 'enable', or 'give you'.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-312",
+          "word": "robust",
+          "condition": "Prohibited \u2014 vague and overused. Be specific about what makes the network/product strong.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-313",
+          "word": "disruptive",
+          "condition": "Prohibited \u2014 overused tech buzzword. Describe the actual innovation instead.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-314",
+          "word": "synergy",
+          "condition": "Prohibited \u2014 corporate jargon. Use 'combined benefit' or 'together' instead.",
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-315",
+          "phrase": "click here",
+          "condition": "Prohibited as CTA text \u2014 violates accessibility standards (WCAG 2.1) and NovaTel CTA policy. Use descriptive CTA text.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a74",
+      "title": "Channel Format Standards",
+      "description": "Each marketing channel has specific constraints. Content must be adapted to meet these requirements \u2014 not simply truncated.",
+      "rules": [
+        {
+          "rule_id": "BRAND-401",
+          "channel": "SMS",
+          "max_characters": 160,
+          "paragraph_style": "Single block, no line breaks unless essential",
+          "must_include": [
+            "Msg&Data rates may apply",
+            "Terms URL (novatel.com/terms or equivalent short URL)"
+          ],
+          "cta_format": "Short URL only \u2014 no button text",
+          "disclosure_rule": "All mandatory disclosures must fit within the 160-character limit or the SMS must link to a terms page. Do NOT split promotional SMS into multiple messages to avoid disclosure.",
+          "severity": "HARD"
+        },
+        {
+          "rule_id": "BRAND-402",
+          "channel": "LinkedIn",
+          "max_words": 150,
+          "paragraph_style": "1-2 sentences per paragraph with white space between. No wall-of-text blocks exceeding 3 sentences.",
+          "must_include": [
+            "Tracked URL (UTM parameters)"
+          ],
+          "cta_format": "Professional CTAs: 'See how it works', 'Compare plans', 'Book a demo'",
+          "audience_note": "LinkedIn skews professional \u2014 avoid consumer-casual tone. Lead with business outcome.",
+          "disclosure_rule": "Disclosures must be visible in the post body, not hidden below 'See More' fold.",
+          "severity": "HARD"
+        },
+        {
+          "rule_id": "BRAND-403",
+          "channel": "Email",
+          "max_words": 300,
+          "paragraph_style": "2-3 sentences per paragraph. Maximum 4 paragraphs in body. Subject line \u2264 60 characters.",
+          "must_include": [
+            "Full T&C link",
+            "Plan name",
+            "Credit period if applicable",
+            "Unsubscribe link (CAN-SPAM)"
+          ],
+          "cta_format": "'Shop now', 'See plans', 'Switch today' \u2014 must be a button with tracked URL",
+          "disclosure_rule": "Full disclosure block at bottom of email. Key conditions (plan requirement, trade-in, credit period) must ALSO appear near the offer headline.",
+          "severity": "HARD"
+        },
+        {
+          "rule_id": "BRAND-404",
+          "channel": "Facebook/Instagram",
+          "max_words": 250,
+          "paragraph_style": "Short, scannable. Use line breaks generously. Emoji allowed but \u2264 3 per post.",
+          "must_include": [
+            "Tracked URL"
+          ],
+          "cta_format": "'Shop now', 'Learn more' (only on Meta platform CTA buttons, NOT in copy text)",
+          "disclosure_rule": "Material disclosures MUST be visible without requiring 'See More' click. On Instagram Stories, disclosures must be on the same frame as the claim.",
+          "severity": "HARD"
+        },
+        {
+          "rule_id": "BRAND-405",
+          "channel": "Landing Page",
+          "max_words_hero": 200,
+          "headline_max_words": 10,
+          "paragraph_style": "2-3 sentences per section. Use subheadings for scanability.",
+          "must_include": [
+            "Tracked URL on CTA",
+            "Full T&C section",
+            "Plan comparison table if multiple plans referenced"
+          ],
+          "cta_format": "Primary: 'Shop now' or 'Switch today'. Secondary: 'Compare plans'.",
+          "disclosure_rule": "Disclosures must appear in the same viewport as the triggering claim. Disclaimers below the fold are insufficient for above-the-fold claims.",
+          "severity": "HARD"
+        },
+        {
+          "rule_id": "BRAND-406",
+          "channel": "Press Release",
+          "word_range": "400-600 words",
+          "paragraph_style": "AP Style. Inverted pyramid. 2-3 sentences per paragraph.",
+          "must_include": [
+            "Boilerplate 'About NovaTel' paragraph",
+            "Media contact information",
+            "Forward-looking statement disclaimer if applicable"
+          ],
+          "cta_format": "No CTA in body \u2014 press releases are informational. Include 'For more information, visit novatel.com' at end.",
+          "disclosure_rule": "Financial claims (revenue, subscriber counts) require 'as of [date]' qualifier.",
+          "severity": "HARD"
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a75",
+      "title": "Audience Tone Calibration",
+      "description": "Adapt tone and content depth based on the target audience. Mismatched tone erodes trust and reduces conversion.",
+      "rules": [
+        {
+          "rule_id": "BRAND-501",
+          "audience": "Executive (VP+)",
+          "tone": "Strategic, outcome-focused, concise",
+          "guidance": "Lead with business outcome and ROI. Minimize technical detail. Frame network as a reliability and productivity story. Use data points to support claims. No jargon, no casual language.",
+          "example_phrases": [
+            "reduce downtime by",
+            "our enterprise clients report",
+            "purpose-built for scale"
+          ],
+          "avoid": [
+            "cool features",
+            "check it out",
+            "you guys",
+            "awesome"
+          ]
+        },
+        {
+          "rule_id": "BRAND-502",
+          "audience": "Consumer (General)",
+          "tone": "Friendly, clear, savings-focused",
+          "guidance": "Lead with savings and simplicity. Avoid jargon entirely. Use conversational but not flippant tone. Explain trade-in credits in plain language. Assume the reader does not know what 'bill credits' means without context.",
+          "example_phrases": [
+            "save every month",
+            "here's what you actually pay",
+            "no surprise fees"
+          ],
+          "avoid": [
+            "deprioritization",
+            "installment agreement",
+            "amortized",
+            "ARPU"
+          ]
+        },
+        {
+          "rule_id": "BRAND-503",
+          "audience": "Small Business Owner",
+          "tone": "Practical, value-conscious, straight-talking",
+          "guidance": "Lead with cost predictability and reliability. Small business owners care about 'will this work and what will it cost me.' Avoid enterprise-speak. Acknowledge they wear many hats.",
+          "example_phrases": [
+            "predictable monthly cost",
+            "no IT team required",
+            "one bill for all your lines"
+          ],
+          "avoid": [
+            "digital transformation",
+            "scalable infrastructure",
+            "end-to-end solution"
+          ]
+        },
+        {
+          "rule_id": "BRAND-504",
+          "audience": "Technical (IT/Ops)",
+          "tone": "Precise, specification-led, peer-to-peer",
+          "guidance": "Can use technical terminology (e.g., mid-band, mmWave, QoS, SASE). Lead with architecture, coverage specs, and API availability. Provide measurable claims with methodology.",
+          "example_phrases": [
+            "n78 mid-band spectrum",
+            "typical download speeds of 150-300 Mbps",
+            "API-first management console"
+          ],
+          "avoid": [
+            "blazing fast",
+            "magical",
+            "just works",
+            "no-brainer"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a76",
+      "title": "CTA Standards",
+      "description": "All calls-to-action must be clear, accessible, and traceable.",
+      "rules": [
+        {
+          "rule_id": "BRAND-601",
+          "rule_text": "Approved CTAs for consumer content:",
+          "approved_ctas": [
+            "Shop now",
+            "See plans",
+            "Switch today",
+            "Compare plans",
+            "Check your trade-in value",
+            "See the deal",
+            "Get started"
+          ],
+          "severity": "SOFT",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-602",
+          "rule_text": "Approved CTAs for enterprise/B2B content:",
+          "approved_ctas": [
+            "Book a demo",
+            "Talk to an expert",
+            "See how it works",
+            "Request a quote",
+            "Contact sales"
+          ],
+          "severity": "SOFT",
+          "applies_to": [
+            "LinkedIn",
+            "email",
+            "landing_page"
+          ]
+        },
+        {
+          "rule_id": "BRAND-603",
+          "rule_text": "Prohibited CTAs \u2014 these are either vague, inaccessible, or create false urgency:",
+          "prohibited_ctas": [
+            "Click here",
+            "Learn more",
+            "Act now",
+            "Don't miss out",
+            "Buy now before it's too late",
+            "Submit",
+            "Go"
+          ],
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "reason": "'Click here' violates WCAG 2.1 accessibility guidelines. 'Learn more' is measurably less effective (per NovaTel A/B test data, Q1 2026). 'Act now' violates BRAND-102 urgency policy."
+        },
+        {
+          "rule_id": "BRAND-604",
+          "rule_text": "Every CTA must link to a tracked URL with UTM parameters (utm_source, utm_medium, utm_campaign at minimum). Untracked links are a HARD violation.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "novatel.com/plans?utm_source=linkedin&utm_medium=social&utm_campaign=q2_switcher",
+            "violation": "novatel.com/plans"
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a77",
+      "title": "Claim Standards",
+      "description": "Every factual claim in NovaTel marketing must be substantiated. Unsubstantiated claims create FTC/FCC risk and erode brand trust.",
+      "rules": [
+        {
+          "rule_id": "BRAND-701",
+          "rule_text": "Quantitative claims (e.g., '40% faster', 'saves 3 hours/week', '99.9% uptime') require a cited source with methodology, sample size, date, and geographic scope.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "NovaTel 5G delivered 37% faster median download speeds vs. the industry average in Q1 2026 (Ookla Speedtest Intelligence, Jan-Mar 2026, nationwide).",
+            "violation": "NovaTel is 40% faster than the competition."
+          }
+        },
+        {
+          "rule_id": "BRAND-702",
+          "rule_text": "Superlative claims ('fastest', 'most reliable', '#1', 'best-in-class') require an independent third-party source (Ookla, J.D. Power, OpenSignal, RootMetrics) published within 18 months.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "examples": {
+            "correct": "Ranked #1 in network reliability by J.D. Power (U.S. Wireless Network Quality Study, Vol. 2, 2025).",
+            "violation": "NovaTel is the #1 network in America."
+          }
+        },
+        {
+          "rule_id": "BRAND-703",
+          "rule_text": "Customer testimonials and quotes require written approval from the customer and must include 'Results may vary' or equivalent disclaimer.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ]
+        },
+        {
+          "rule_id": "BRAND-704",
+          "rule_text": "Comparative claims against competitors must not name the competitor directly in advertising. Use 'other major carriers' or 'the industry average'. Exception: press releases responding to specific competitive claims.",
+          "severity": "HARD",
+          "applies_to": [
+            "SMS",
+            "social",
+            "email",
+            "landing_page"
+          ],
+          "examples": {
+            "correct": "Switch from your current carrier and save up to 20%.",
+            "violation": "Switch from Verizon \u2014 NovaTel is cheaper and faster."
+          }
+        }
+      ]
+    },
+    {
+      "section_id": "\u00a78",
+      "title": "Disclosure Requirements by Claim Type",
+      "description": "Specific claim types trigger mandatory disclosures. These are non-negotiable \u2014 failure to include them creates direct FTC/FCC liability.",
+      "rules": [
+        {
+          "rule_id": "BRAND-801",
+          "claim_type": "$0 / Free Device Claims",
+          "mandatory_disclosures": [
+            "Required plan name and monthly cost",
+            "Trade-in requirement and eligible device brands/conditions",
+            "Credit period (e.g., '36 monthly bill credits')",
+            "That credits stop if plan is changed or service cancelled",
+            "Applicable taxes due at purchase"
+          ],
+          "proximity_rule": "Key conditions must appear within the same visual unit as the $0/Free claim. A footnote at bottom of page is insufficient.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "example_disclosure": "$0/mo after bill credits when you trade in an eligible device in good condition on Unlimited Premium ($85.99/mo). Credits applied over 36 months; credits stop if you cancel or change plans. Tax on full device price due at purchase."
+        },
+        {
+          "rule_id": "BRAND-802",
+          "claim_type": "Network Speed Claims",
+          "mandatory_disclosures": [
+            "Test methodology (e.g., Ookla Speedtest Intelligence)",
+            "Date range of tests",
+            "Geographic scope (nationwide, specific markets)",
+            "Whether speeds cited are 'typical', 'median', or 'peak'"
+          ],
+          "proximity_rule": "Citation must appear as a footnote on the same page/screen as the claim.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "example_disclosure": "Based on Ookla Speedtest Intelligence data, median download speeds, Q1 2026, nationwide. Actual speeds vary by location, device, and network conditions."
+        },
+        {
+          "rule_id": "BRAND-803",
+          "claim_type": "Savings / Price Comparison Claims",
+          "mandatory_disclosures": [
+            "Comparison baseline (which competitor, which plan tier)",
+            "Whether streaming services or bundled perks are factored into the comparison",
+            "AutoPay/paperless billing requirements",
+            "Whether taxes and fees are included in the advertised price"
+          ],
+          "proximity_rule": "Comparison basis must be stated in the same sentence or immediately following the savings claim.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "example_disclosure": "Save 20% vs. comparable unlimited plans from major carriers. Comparison based on single-line pricing with AutoPay. Includes value of bundled streaming ($15.99/mo). Taxes and fees extra."
+        },
+        {
+          "rule_id": "BRAND-804",
+          "claim_type": "BOGO (Buy One Get One) Claims",
+          "mandatory_disclosures": [
+            "New line activation required",
+            "Both devices must be financed",
+            "Second device value applied as monthly bill credits",
+            "Credit period and monthly credit amount",
+            "Remaining balance due if cancelled early",
+            "Activation fee ($35)"
+          ],
+          "proximity_rule": "All conditions must be in the same ad unit. Cannot rely on 'See details' link alone.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "example_disclosure": "BOGO: Buy iPhone 17, get iPhone 17 free. Req's 2 Unlimited Premium lines. Add a line req'd. 2nd device $0/mo via 36 monthly bill credits ($24.17/mo). Cancel/change plan = remaining balance due. $35 activation fee per line."
+        },
+        {
+          "rule_id": "BRAND-805",
+          "claim_type": "Unlimited Plan Claims",
+          "mandatory_disclosures": [
+            "Deprioritization threshold (e.g., 'speeds may temporarily slow after 50GB during congestion')",
+            "Video streaming resolution limits (e.g., '480p on Starter, 4K on Premium')",
+            "Hotspot data limits and throttled speed after limit"
+          ],
+          "proximity_rule": "Deprioritization disclosure must appear within the same content block as 'unlimited' claim.",
+          "severity": "HARD",
+          "applies_to": [
+            "all"
+          ],
+          "example_disclosure": "Unlimited data on NovaTel's 5G network. On Unlimited Starter, speeds may temporarily slow during network congestion. Video streams at 480p. 5GB hotspot data included; slowed to 600Kbps after."
+        }
+      ]
+    }
+  ]
+}

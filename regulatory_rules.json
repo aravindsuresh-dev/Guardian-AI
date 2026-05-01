@@ -1,0 +1,259 @@
+{
+  "title": "FCC/FTC Telecom Advertising Compliance Rules",
+  "description": "Regulatory rules for wireless carrier marketing content compliance. Sourced from FTC .com Disclosures Guide, FCC Title 47 CFR, multi-state AG settlements, and NAD/NARB rulings.",
+  "version": "2026-Q2",
+  "rules": [
+    {
+      "rule_id": "FTC-001",
+      "category": "disclosure_proximity",
+      "rule_text": "Disclosures must be placed as close as possible to the triggering claim. On small screens (mobile), disclosures in a different column, below the fold, or requiring scrolling may not be visible when zoomed and are considered insufficient.",
+      "source": "FTC .com Disclosures Guide (March 2013), \u00a7Proximity, pp. 7-10",
+      "severity": "HARD",
+      "applies_to": [
+        "SMS",
+        "social",
+        "mobile_web",
+        "email",
+        "landing_page"
+      ],
+      "example_violation": "Headline says '$0 iPhone 17 Pro' at top of page; disclosure about 36-month credits and plan requirement appears in footer.",
+      "example_compliant": "Headline: '$0/mo iPhone 17 Pro (w/ elig. trade-in on Unlimited Premium plan. 36-mo bill credits.)'"
+    },
+    {
+      "rule_id": "FTC-002",
+      "category": "disclosure_proximity",
+      "rule_text": "Disclosures in pop-ups are not adequate because they may be blocked by software. Disclosures accessible only via hyperlinks should be used only for detailed, lengthy disclosures that are not integral to the primary claim.",
+      "source": "FTC .com Disclosures Guide (March 2013), \u00a7Prominence and Placement, pp. 11-13",
+      "severity": "HARD",
+      "applies_to": [
+        "landing_page",
+        "email",
+        "social"
+      ],
+      "example_violation": "Pop-up or click-through 'See full terms' link as the only disclosure for a '$0 phone' claim.",
+      "example_compliant": "Primary conditions (plan, trade-in, credit period) in the ad body; detailed T&C linked separately."
+    },
+    {
+      "rule_id": "FTC-003",
+      "category": "clear_and_conspicuous",
+      "rule_text": "Disclosures must be clear and conspicuous \u2014 difficult to miss and easy for an ordinary consumer to understand. Font size, color contrast, and placement must ensure readability. Vague shorthand or abbreviations that consumers would not understand are insufficient.",
+      "source": "FTC .com Disclosures Guide (March 2013), \u00a7Prominence, pp. 15-18; FTC Act \u00a75",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Disclosure in 6pt gray text on white background: 'Subj. to elig. pln req. Credits applied per inst. agmt.'",
+      "example_compliant": "Disclosure in same font size as offer text: 'Requires Unlimited Premium plan ($85.99/mo). Trade-in credit applied as monthly bill credits over 36 months.'"
+    },
+    {
+      "rule_id": "FTC-004",
+      "category": "clear_and_conspicuous",
+      "rule_text": "On mobile/small-screen devices, disclosures must be designed for the specific platform. Advertisers must not use desktop-oriented layouts that hide critical disclosures when viewed on mobile. Scrolling text, embedded video disclosures, or time-limited banners are insufficient.",
+      "source": "FTC .com Disclosures Guide (March 2013), \u00a7Space-Constrained Ads, pp. 19-22",
+      "severity": "HARD",
+      "applies_to": [
+        "SMS",
+        "social",
+        "mobile_web"
+      ],
+      "example_violation": "A mobile ad where the '36-month credit' disclosure requires horizontal scrolling to read.",
+      "example_compliant": "Disclosure stacked vertically, fully visible on a 375px-wide screen without scrolling."
+    },
+    {
+      "rule_id": "FTC-005",
+      "category": "free_claims",
+      "rule_text": "Any 'free' or '$0' claim for a wireless device must immediately disclose ALL material conditions: (1) required wireless plan and its monthly cost, (2) trade-in requirements including eligible device types and condition, (3) that the value is applied as bill credits over an installment period, (4) the installment period length, and (5) that credits stop if the plan is changed or service is cancelled.",
+      "source": "FTC Act \u00a75; 50-State AG Settlement (May 2024) \u2014 $10.22M against AT&T, Verizon, T-Mobile for deceptive 'free phone' advertising; FTC Guides Concerning Use of the Word 'Free' (16 CFR \u00a7251.1)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "FREE iPhone 17! Trade in any phone and it's yours!",
+      "example_compliant": "$0/mo iPhone 17 Pro w/ eligible trade-in (Apple/Samsung/Google, good condition) on Unlimited Premium ($85.99/mo). Via 36 monthly bill credits. Credits stop if you cancel or change plans. Tax on full price due at purchase."
+    },
+    {
+      "rule_id": "FTC-006",
+      "category": "free_claims",
+      "rule_text": "The word 'free' must not be used if the consumer is required to purchase another product or service (e.g., a specific plan tier) that costs more than what they would otherwise pay. If the 'free' device requires the consumer's most expensive plan, the total cost of ownership over the installment period must be disclosed.",
+      "source": "FTC Guides Concerning Use of the Word 'Free' (16 CFR \u00a7251.1); NY AG v. T-Mobile (Dec 2023)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Get a FREE Galaxy S26! (fine print: requires $90/mo plan for 36 months)",
+      "example_compliant": "Galaxy S26 at $0/mo with Unlimited Premium ($85.99/mo). Total plan cost over 36 months: $3,095.64 (device included)."
+    },
+    {
+      "rule_id": "FTC-007",
+      "category": "unlimited_claims",
+      "rule_text": "'Unlimited' data plans must clearly and conspicuously disclose any speed throttling thresholds, deprioritization policies, data caps that trigger reduced speeds, video streaming resolution limits, and hotspot data caps. The disclosure must appear in the same content block as the 'unlimited' claim.",
+      "source": "50-State AG Settlement (May 2024); FTC v. AT&T Mobility (2014, $60M settlement for throttling 'unlimited' plans); NAD Case #7406 (Jan 2025)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Unlimited data. No limits. No throttling. Period.",
+      "example_compliant": "Unlimited data on NovaTel 5G. On Unlimited Starter, speeds may temporarily slow during network congestion after 50GB. Video streams at 480p. 5GB hotspot included."
+    },
+    {
+      "rule_id": "FTC-008",
+      "category": "unlimited_claims",
+      "rule_text": "Marketing materials must not use 'truly unlimited', 'no data caps', or 'no throttling' if ANY form of speed management, deprioritization, or video resolution limit is applied at any usage threshold. These phrases constitute per se deceptive claims.",
+      "source": "FTC v. AT&T Mobility (2014, $60M); NAD Case #7411 (Feb 2025); 50-State AG Guidance Letter (June 2024)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Truly unlimited data \u2014 no caps, no throttling, no exceptions!",
+      "example_compliant": "Unlimited talk, text, and data. Speeds may be temporarily reduced during congestion. See plan details."
+    },
+    {
+      "rule_id": "FTC-009",
+      "category": "speed_claims",
+      "rule_text": "Network speed claims must specify: (1) test methodology and source, (2) date range of testing, (3) geographic scope (nationwide or specific markets), and (4) whether cited speeds are 'typical', 'median', 'peak', or 'theoretical maximum'. Unqualified speed claims (e.g., 'up to 1 Gbps') without context are considered misleading.",
+      "source": "FCC Consumer & Governmental Affairs Bureau; FTC Act \u00a75; FCC Broadband Speed Labeling Rules (effective April 2024)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Experience speeds up to 4 Gbps on NovaTel 5G!",
+      "example_compliant": "NovaTel 5G delivers typical download speeds of 150-300 Mbps nationwide (Ookla Speedtest Intelligence, Q1 2026). Speeds vary by location, device, and network conditions."
+    },
+    {
+      "rule_id": "FTC-010",
+      "category": "speed_claims",
+      "rule_text": "The FCC Broadband Speed Labels (Nutrition Labels) require ISPs and wireless providers to present speed, price, and other key information in a standardized format. Marketing claims must be consistent with the information on the broadband label. Advertising speeds significantly higher than those on the label is a per se violation.",
+      "source": "FCC Broadband Speed Labeling Rules (47 CFR \u00a78.1, effective April 10, 2024); Infrastructure Investment and Jobs Act \u00a760504",
+      "severity": "HARD",
+      "applies_to": [
+        "landing_page",
+        "email"
+      ],
+      "example_violation": "Landing page claims '1 Gbps download' but Broadband Label shows 'Typical Download: 100-300 Mbps'.",
+      "example_compliant": "Marketing claim matches Broadband Label: 'Typical download speeds of 100-300 Mbps (see full Broadband Label at novatel.com/broadband-facts).'"
+    },
+    {
+      "rule_id": "FTC-011",
+      "category": "comparison_claims",
+      "rule_text": "Comparative savings claims (e.g., 'Save 20% vs competitors') must clearly disclose: (1) the specific basis of comparison (which competitor plan tier), (2) whether bundled services (streaming, hotspot) are factored in, (3) AutoPay/paperless billing requirements, (4) whether taxes and fees are included. The NAD has ruled that 'apples-to-apples' comparisons are required.",
+      "source": "NAD/NARB T-Mobile Ruling (Aug 2025) \u2014 NAD recommended T-Mobile discontinue '20% savings' claim because comparison factored in value of bundled Netflix; FTC Comparative Advertising Policy Statement",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Switch to NovaTel and save 20% every month vs. Verizon!",
+      "example_compliant": "Save up to 20% vs. comparable unlimited plans from other major carriers. Based on single-line pricing with AutoPay. Includes estimated value of bundled streaming ($15.99/mo). Taxes & fees extra."
+    },
+    {
+      "rule_id": "FTC-012",
+      "category": "trade_in_claims",
+      "rule_text": "Trade-in offers must disclose: (1) eligible device brands and specific models, (2) device condition requirements ('good condition' must be defined), (3) that promotional value is applied as bill credits over the installment period (not instant), (4) the installment period length, (5) that credits stop if plan is changed or cancelled, and (6) that the trade-in device must be returned within a specified timeframe.",
+      "source": "50-State AG Settlement (May 2024); T-Mobile Trade-In Terms & Conditions (June 2025); Verizon Device Trade-In T&C (2025)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Trade in ANY phone and get $1,000 off your new iPhone!",
+      "example_compliant": "Trade in eligible Apple, Samsung, or Google device in good condition (powers on, no cracks, no water damage) and get up to $1,000 in trade-in credit. Credit applied as $27.78/mo bill credits over 36 months on Unlimited Premium. Credits stop if you cancel or change plans."
+    },
+    {
+      "rule_id": "FTC-013",
+      "category": "trade_in_claims",
+      "rule_text": "Advertising 'any phone' or 'any device' as trade-in eligible when only specific brands, models, or conditions qualify is a deceptive practice. The word 'any' may only be used if genuinely every phone (regardless of brand, model, age, or condition) qualifies for the advertised credit amount.",
+      "source": "FTC Act \u00a75; Consumer Financial Protection Bureau (CFPB) guidance on deceptive installment credit advertising; Multiple NAD challenges (2023-2025)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Trade in any phone \u2014 even a flip phone \u2014 and get $800 off!",
+      "example_compliant": "Trade in select Apple, Samsung, or Google phones in good condition and get up to $800 in trade-in credit. See eligible devices at novatel.com/trade-in."
+    },
+    {
+      "rule_id": "FTC-014",
+      "category": "sms_requirements",
+      "rule_text": "All marketing SMS messages must include: (1) 'Msg&Data rates may apply' or equivalent, (2) a link to full terms and conditions, (3) opt-out instructions ('Reply STOP to unsubscribe' or equivalent). Messages must comply with FCC TCPA rules requiring prior express written consent for marketing messages.",
+      "source": "FCC TCPA Rules (47 CFR \u00a764.1200); TCPA Consent Requirements (FCC Declaratory Ruling, Dec 2023); CTIA Messaging Principles",
+      "severity": "HARD",
+      "applies_to": [
+        "SMS"
+      ],
+      "example_violation": "FREE iPhone 17! Text DEAL to 55555 for your exclusive offer!",
+      "example_compliant": "iPhone 17 Pro $0/mo w/ elig. trade-in on Unlimited Premium. 36-mo credits. novatel.com/terms Msg&Data rates apply. Reply STOP to opt out."
+    },
+    {
+      "rule_id": "FTC-015",
+      "category": "sms_requirements",
+      "rule_text": "Promotional SMS messages must not be split across multiple messages to circumvent disclosure requirements or the 160-character limit. If the offer and its required disclosures cannot fit in a single SMS, the message must contain the core offer plus a link to full terms \u2014 not the offer in message 1 and disclosures in message 2.",
+      "source": "CTIA Short Code Monitoring Handbook (2024); 47 CFR \u00a764.1200(a)(4)",
+      "severity": "HARD",
+      "applies_to": [
+        "SMS"
+      ],
+      "example_violation": "MSG 1: 'FREE iPhone 17 Pro! Text YES to claim!' MSG 2: 'Terms: Plan req'd. 36-mo credits. Msg&Data rates apply.'",
+      "example_compliant": "Single SMS: 'iPhone 17 Pro $0/mo w/ trade-in + Unlimited Premium. 36-mo credits. Terms: novatel.com/t Msg&Data rates apply STOP to opt out'"
+    },
+    {
+      "rule_id": "FTC-016",
+      "category": "social_media_disclosure",
+      "rule_text": "On social media platforms, material disclosures MUST be visible in the initial view of the post without requiring the user to click 'See More', 'Read More', expand, or scroll. On Instagram Stories and Reels, disclosures must appear on the same frame/slide as the claim, visible for sufficient time to be read and understood.",
+      "source": "FTC .com Disclosures Guide \u00a7Space-Constrained Ads, pp. 19-22; FTC Social Media Guidance (Nov 2023)",
+      "severity": "HARD",
+      "applies_to": [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "TikTok"
+      ],
+      "example_violation": "Facebook post: '$0 iPhone 17! \ud83d\ude0d\ud83d\udd25 Switch today and save big!... [See More] ...requires Unlimited Premium plan, 36-month bill credits apply, trade-in conditions apply'",
+      "example_compliant": "Facebook post: '$0/mo iPhone 17 w/ eligible trade-in on Unlimited Premium ($85.99/mo). 36-mo bill credits. Terms: novatel.com/offers'"
+    },
+    {
+      "rule_id": "FTC-017",
+      "category": "superlative_claims",
+      "rule_text": "Superlative claims ('fastest', 'most reliable', 'best coverage', '#1 network', 'best-in-class') require a currently valid, independent, third-party source published within 18 months. The source must be cited with: (1) research firm name, (2) study name, (3) date/period, and (4) geographic scope. Self-commissioned studies are not independent sources.",
+      "source": "FTC Act \u00a75; NAD precedent (multiple cases 2020-2025); Lanham Act \u00a743(a) (competitor challenge risk)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "NovaTel: America's fastest and most reliable 5G network.",
+      "example_compliant": "NovaTel: Ranked #1 in 5G download speeds by Ookla Speedtest Intelligence (Q4 2025, nationwide median). Named 'Most Reliable' by J.D. Power (Wireless Network Quality Study, Vol. 2, 2025)."
+    },
+    {
+      "rule_id": "FTC-018",
+      "category": "price_advertising",
+      "rule_text": "Advertised plan prices must include or clearly disclose ALL mandatory fees (activation fees, administrative fees, regulatory recovery fees). 'Starting at' prices must reflect the actual lowest available price including required add-ons. 'With AutoPay' pricing must state the non-AutoPay price or the AutoPay discount amount.",
+      "source": "FTC Guides Against Deceptive Pricing (16 CFR Part 233); FCC Truth-in-Billing Rules (47 CFR \u00a764.2401); FTC All-In Pricing Policy Statement (2024)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Unlimited plans starting at just $25/mo! (actual price is $65.99/mo before 12-month promo, + $3.49 admin fee, + taxes)",
+      "example_compliant": "Unlimited Starter: $65.99/mo with AutoPay ($70.99/mo without). Taxes, activation fee ($35), and admin fee ($3.49/mo) extra. Introductory offer: $32.99/mo for first 12 months, then $65.99/mo."
+    },
+    {
+      "rule_id": "FTC-019",
+      "category": "bogo_claims",
+      "rule_text": "Buy-One-Get-One (BOGO) offers must disclose: (1) new line activation is required, (2) both devices must be financed on installment agreements, (3) second device value is applied as monthly bill credits (not instant), (4) the credit period and monthly credit amount, (5) cancelling service or changing plans means forfeiting remaining credits and owing the device balance, (6) per-line activation fee.",
+      "source": "FTC Guides Against Bait Advertising (16 CFR Part 238); 50-State AG Settlement (May 2024); NAD Case #7398 (Dec 2024)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "BOGO! Buy one iPhone, get one FREE! No catch!",
+      "example_compliant": "Buy iPhone 17, get iPhone 17 on us. Req's 2 lines on Unlimited Premium. New line req'd. 2nd device via 36 monthly bill credits ($24.17/mo). Cancel or change plan = remaining balance due. $35 activation/line."
+    },
+    {
+      "rule_id": "FTC-020",
+      "category": "auto_renewal",
+      "rule_text": "Promotional pricing that reverts to a higher rate after an introductory period must clearly disclose: (1) the promotional period length, (2) the regular rate after the promo period, (3) that the change is automatic and does not require customer action. This disclosure must appear at the same prominence as the promotional price.",
+      "source": "FTC Negative Option Rule (16 CFR Part 425, amended Oct 2024); State automatic renewal laws (CA BPC \u00a717602, NY GBL \u00a7527-a)",
+      "severity": "HARD",
+      "applies_to": [
+        "all"
+      ],
+      "example_violation": "Unlimited Starter only $32.99/mo! (fine print: for 12 months, then $65.99/mo automatically)",
+      "example_compliant": "Unlimited Starter: $32.99/mo for your first 12 months \u2014 then $65.99/mo. No action needed; rate adjusts automatically after promo period."
+    }
+  ]
+}

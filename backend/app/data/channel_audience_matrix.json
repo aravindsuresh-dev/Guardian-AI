@@ -1,0 +1,169 @@
+{
+  "title": "SignalGuard AI \u2014 Channel \u00d7 Audience Adaptation Matrix",
+  "description": "Lookup table for the Adapter agent. Maps each channel and audience combination to specific formatting, tone, and compliance requirements.",
+  "channels": {
+    "SMS": {
+      "max_characters": 160,
+      "format": "Single block text. No line breaks unless critical. Abbreviations allowed for space (e.g., 'w/', 'elig.', 'cond.', 'mo.').",
+      "mandatory_elements": [
+        "Msg&Data rates may apply",
+        "Terms URL (short form)",
+        "Opt-out instructions"
+      ],
+      "cta_format": "Short URL only \u2014 no button text, no 'Click here'",
+      "disclosure_rules": "All key conditions must fit within 160 chars or link to terms page. Never split across multiple SMS.",
+      "audiences": {
+        "Consumer (General)": {
+          "tone": "Brief, clear, savings-first. No jargon. Plain language abbreviations OK.",
+          "example": "iPhone 17 Pro $0/mo w/ elig. trade-in on Unlimited Premium ($85.99/mo). 36-mo credits. novatel.com/t Msg&Data rates apply STOP to opt out"
+        },
+        "Executive (VP+)": {
+          "tone": "Not recommended for executive audience \u2014 SMS is too informal for VP-level outreach. Use email or LinkedIn instead.",
+          "example": "N/A \u2014 channel mismatch"
+        },
+        "Small Business Owner": {
+          "tone": "Direct, cost-focused. Lead with per-line price.",
+          "example": "NovaTel Business: $30/line 5+ lines w/ AutoPay. Unlimited data + 15GB hotspot. novatel.com/biz Msg&Data rates apply STOP to opt out"
+        },
+        "Technical (IT/Ops)": {
+          "tone": "Not recommended \u2014 SMS lacks the space for technical detail.",
+          "example": "N/A \u2014 channel mismatch"
+        }
+      }
+    },
+    "Email": {
+      "max_words": 300,
+      "format": "Subject line \u2264 60 chars. 2-3 sentences per paragraph. Max 4 paragraphs in body. Bullet points for features.",
+      "mandatory_elements": [
+        "Full T&C link",
+        "Plan name",
+        "Credit period (if applicable)",
+        "Unsubscribe link (CAN-SPAM)"
+      ],
+      "cta_format": "Button-style CTA from approved list + tracked URL",
+      "disclosure_rules": "Key conditions near offer headline. Full disclosure block at bottom. Both required.",
+      "audiences": {
+        "Consumer (General)": {
+          "tone": "Friendly, conversational, savings-forward. Explain bill credits in plain language. Assume reader doesn't know wireless jargon.",
+          "max_words": 250
+        },
+        "Executive (VP+)": {
+          "tone": "Concise, outcome-focused. Lead with business impact. No exclamation marks. Data-backed claims only.",
+          "max_words": 200
+        },
+        "Small Business Owner": {
+          "tone": "Practical, cost-transparent. Lead with 'what it costs and what you get.' Acknowledge they don't have time for sales pitches.",
+          "max_words": 250
+        },
+        "Technical (IT/Ops)": {
+          "tone": "Specification-led. Can use technical terms (QoS, SASE, mmWave). Include links to technical documentation.",
+          "max_words": 300
+        }
+      }
+    },
+    "LinkedIn": {
+      "max_words": 150,
+      "format": "1-2 sentences per paragraph with white space between. No wall-of-text. Professional but not stiff.",
+      "mandatory_elements": [
+        "Tracked URL (UTM parameters)"
+      ],
+      "cta_format": "Professional CTAs: 'See how it works', 'Compare plans', 'Book a demo'",
+      "disclosure_rules": "Disclosures visible in post body \u2014 not hidden below 'See More' fold.",
+      "audiences": {
+        "Consumer (General)": {
+          "tone": "Not typical for LinkedIn consumer content \u2014 reframe as 'smart consumer' angle if needed.",
+          "max_words": 150
+        },
+        "Executive (VP+)": {
+          "tone": "Strategic, concise. Lead with industry trend \u2192 NovaTel's role. No hard sell. Thought-leadership framing.",
+          "max_words": 120
+        },
+        "Small Business Owner": {
+          "tone": "Empathetic, practical. 'We know you're busy' framing. Cost predictability emphasis.",
+          "max_words": 150
+        },
+        "Technical (IT/Ops)": {
+          "tone": "Peer-to-peer. Can discuss spectrum, architecture, APIs. Link to whitepapers or tech briefs.",
+          "max_words": 150
+        }
+      }
+    },
+    "Facebook/Instagram": {
+      "max_words": 250,
+      "format": "Short, scannable. Line breaks between ideas. Emoji allowed (\u2264 3 per post). Hashtags optional (\u2264 3).",
+      "mandatory_elements": [
+        "Tracked URL"
+      ],
+      "cta_format": "Platform CTA buttons ('Shop now', 'Learn more') \u2014 NOT in copy text. In-copy CTA from approved list.",
+      "disclosure_rules": "ALL material disclosures MUST be visible without 'See More' click. Instagram Stories: disclosures on same frame as claim.",
+      "audiences": {
+        "Consumer (General)": {
+          "tone": "Friendly, visual-forward, savings-focused. Short sentences. Emoji to break up text (but \u2264 3).",
+          "max_words": 200
+        },
+        "Executive (VP+)": {
+          "tone": "Not recommended for executive audience on Facebook/Instagram.",
+          "max_words": 0
+        },
+        "Small Business Owner": {
+          "tone": "Relatable, 'small biz owner to small biz owner' angle. Before/after cost comparisons work well.",
+          "max_words": 200
+        },
+        "Technical (IT/Ops)": {
+          "tone": "Not recommended for technical audience on Facebook/Instagram.",
+          "max_words": 0
+        }
+      }
+    },
+    "Landing_Page": {
+      "max_words_hero": 200,
+      "format": "Headline \u2264 10 words. 2-3 sentences per section. Subheadings for scanability. Plan comparison table if multiple plans.",
+      "mandatory_elements": [
+        "Tracked URL on CTA",
+        "Full T&C section",
+        "Broadband Facts label link (if speed claims made)"
+      ],
+      "cta_format": "Primary: 'Shop now' or 'Switch today'. Secondary: 'Compare plans'. Button-style.",
+      "disclosure_rules": "Disclosures in SAME VIEWPORT as triggering claim. Separate T&C section at bottom is NOT sufficient for above-fold claims.",
+      "audiences": {
+        "Consumer (General)": {
+          "tone": "Clear, benefit-led. Short hero text, feature bullets, prominent CTA. Explain everything in plain language.",
+          "max_words_hero": 200
+        },
+        "Executive (VP+)": {
+          "tone": "ROI-focused hero section. Case study or data proof point immediately visible. Clean design, minimal text.",
+          "max_words_hero": 150
+        },
+        "Small Business Owner": {
+          "tone": "Cost-comparison led. 'What you pay vs. what you get' layout. FAQ section addressing common SMB concerns.",
+          "max_words_hero": 200
+        },
+        "Technical (IT/Ops)": {
+          "tone": "Spec sheet format. Feature table with technical details. API documentation links. Architecture diagrams referenced.",
+          "max_words_hero": 250
+        }
+      }
+    },
+    "Press_Release": {
+      "word_range": "400-600",
+      "format": "AP Style. Inverted pyramid. 2-3 sentences per paragraph. FOR IMMEDIATE RELEASE header.",
+      "mandatory_elements": [
+        "Boilerplate 'About NovaTel' paragraph",
+        "Media contact info",
+        "Forward-looking statement disclaimer (if applicable)"
+      ],
+      "cta_format": "NO CTA in body. End with 'For more information, visit novatel.com'.",
+      "disclosure_rules": "Financial claims need 'as of [date]' qualifier. Speed/coverage claims need source citation inline.",
+      "audiences": {
+        "Media": {
+          "tone": "Factual, newsworthy angle first. Quotes from executives. No marketing language \u2014 AP style neutrality.",
+          "word_range": "400-600"
+        },
+        "Investor": {
+          "tone": "Forward-looking statement required. Financial metrics sourced. Cautious language on projections.",
+          "word_range": "500-700"
+        }
+      }
+    }
+  }
+}

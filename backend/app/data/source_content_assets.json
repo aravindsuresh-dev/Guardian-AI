@@ -1,0 +1,503 @@
+{
+  "title": "NovaTel Wireless \u2014 Approved Source Content Assets",
+  "description": "Source marketing materials from which channel-specific content is adapted. Each asset may contain compliance issues that the SignalGuard review agents should catch.",
+  "assets": [
+    {
+      "asset_id": "SRC-001",
+      "title": "NovaTel Summer Switch Campaign \u2014 Source One-Pager",
+      "asset_type": "product_one_pager",
+      "target_campaign": "Q3 2026 Summer Switcher Campaign",
+      "target_audience": "Consumer (General)",
+      "approved_channels": [
+        "SMS",
+        "email",
+        "Facebook/Instagram",
+        "landing_page"
+      ],
+      "associated_offer_ids": [
+        "OFF-001",
+        "OFF-009"
+      ],
+      "status": "draft",
+      "source_content": "Summer Switch to NovaTel \u2014 Get the Fastest 5G and a Free iPhone 17 Pro\n\nIt's time to make the switch. NovaTel has the fastest 5G network in America, and right now, you can get a FREE iPhone 17 Pro when you switch from your old carrier.\n\nWhy NovaTel?\n\u2022 Fastest 5G speeds \u2014 up to 4 Gbps download\n\u2022 Truly unlimited data \u2014 no caps, no throttling, period\n\u2022 The best customer service in wireless\n\nThe Deal: Trade in any phone \u2014 even an old flip phone \u2014 and walk away with a brand-new iPhone 17 Pro for $0. Plus, we'll give you a $200 Visa card just for switching. That's over $1,200 in value, guaranteed.\n\nNo strings attached. No hidden fees. No catch.\n\nSwitch today and save 25% vs. what you're paying now. Most customers see savings from day one.\n\nReady? Click here or visit your nearest NovaTel store.",
+      "claims_made": [
+        "Fastest 5G network in America",
+        "Up to 4 Gbps download speeds",
+        "Truly unlimited data \u2014 no caps, no throttling",
+        "Best customer service in wireless",
+        "Trade in any phone",
+        "iPhone 17 Pro for $0",
+        "$200 Visa card for switching",
+        "Over $1,200 in value",
+        "Guaranteed value",
+        "No strings attached",
+        "Save 25% vs current carrier"
+      ],
+      "known_violations_for_eval": [
+        {
+          "rule_ids": [
+            "FTC-017",
+            "BRAND-202",
+            "BRAND-702"
+          ],
+          "issue": "'fastest 5G' \u2014 no cited independent source"
+        },
+        {
+          "rule_ids": [
+            "FTC-009",
+            "FTC-010"
+          ],
+          "issue": "'up to 4 Gbps' \u2014 peak theoretical, no methodology cited"
+        },
+        {
+          "rule_ids": [
+            "FTC-007",
+            "FTC-008",
+            "BRAND-301"
+          ],
+          "issue": "'truly unlimited \u2014 no throttling' \u2014 Unlimited Starter IS deprioritized"
+        },
+        {
+          "rule_ids": [
+            "FTC-017",
+            "BRAND-702"
+          ],
+          "issue": "'best customer service' \u2014 no cited source"
+        },
+        {
+          "rule_ids": [
+            "FTC-013",
+            "FTC-012"
+          ],
+          "issue": "'any phone' \u2014 only select brands qualify for full credit"
+        },
+        {
+          "rule_ids": [
+            "FTC-005",
+            "BRAND-302",
+            "BRAND-801"
+          ],
+          "issue": "'$0' and 'FREE' without plan/trade-in/credit period disclosure"
+        },
+        {
+          "rule_ids": [
+            "BRAND-305"
+          ],
+          "issue": "'guaranteed' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-303"
+          ],
+          "issue": "'no strings attached' \u2014 prohibited phrase"
+        },
+        {
+          "rule_ids": [
+            "FTC-011",
+            "BRAND-803"
+          ],
+          "issue": "'save 25%' \u2014 no comparison basis disclosed"
+        },
+        {
+          "rule_ids": [
+            "BRAND-315",
+            "BRAND-603"
+          ],
+          "issue": "'Click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_ids": [
+            "BRAND-102"
+          ],
+          "issue": "Urgency-adjacent pressure language"
+        },
+        {
+          "rule_ids": [
+            "BRAND-604"
+          ],
+          "issue": "No tracked URL (UTM parameters)"
+        }
+      ]
+    },
+    {
+      "asset_id": "SRC-002",
+      "title": "NovaTel Family Plan Value Proposition \u2014 Offer Sheet",
+      "asset_type": "offer_sheet",
+      "target_campaign": "Always-On Family Plan Awareness",
+      "target_audience": "Consumer (General)",
+      "approved_channels": [
+        "email",
+        "Facebook/Instagram",
+        "landing_page"
+      ],
+      "associated_offer_ids": [
+        "OFF-007"
+      ],
+      "status": "draft",
+      "source_content": "NovaTel Unlimited Family Plan \u2014 Scalable Connectivity for Household Multi-Device Ecosystems\n\nConfiguring your family's wireless infrastructure shouldn't require a dedicated IT resource. NovaTel's Unlimited Starter multi-line solution delivers robust network connectivity across all household endpoints at an industry-leading per-unit cost basis.\n\nKey Value Drivers:\n\u2022 4 lines at $25/line/mo (aggregate monthly: $100 with AutoPay enrollment)\n\u2022 Unlimited data throughput with QoS-managed deprioritization thresholds\n\u2022 5GB per-line mobile hotspot allocation with graceful degradation\n\u2022 Full 5G NR access across NovaTel's nationwide deployment footprint\n\u2022 Seamless onboarding \u2014 zero migration downtime\n\nEnterprise-Grade Reliability, Consumer-Friendly Pricing:\nNovaTel leverages a dense small-cell deployment architecture augmented by mid-band spectrum holdings to deliver consistent sub-20ms latency and median download speeds exceeding 200 Mbps nationwide (internal network monitoring, Q1 2026).\n\nROI Analysis: A family of 4 switching from comparable carrier plans saves an estimated $480/year. This calculation factors in NovaTel's bundled streaming value ($15.99/mo) and waived activation for port-in customers.\n\nOptimize your family's connectivity. Schedule a consultation or visit novatel.com/family.",
+      "claims_made": [
+        "4 lines at $25/line/mo",
+        "Industry-leading per-unit cost",
+        "200 Mbps median download speeds (internal monitoring)",
+        "Sub-20ms latency",
+        "$480/year savings vs competitors",
+        "Includes bundled streaming value"
+      ],
+      "known_violations_for_eval": [
+        {
+          "rule_ids": [
+            "BRAND-502"
+          ],
+          "issue": "Tone completely wrong \u2014 written for technical/enterprise audience, target is Consumer General"
+        },
+        {
+          "rule_ids": [
+            "BRAND-310"
+          ],
+          "issue": "'industry-leading' without third-party source"
+        },
+        {
+          "rule_ids": [
+            "BRAND-312"
+          ],
+          "issue": "'robust' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-308"
+          ],
+          "issue": "'seamless' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-307"
+          ],
+          "issue": "'leverages' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-701"
+          ],
+          "issue": "'200 Mbps' from internal monitoring \u2014 not independent source"
+        },
+        {
+          "rule_ids": [
+            "FTC-011",
+            "BRAND-803"
+          ],
+          "issue": "'$480/year savings' \u2014 comparison includes streaming value, not disclosed clearly"
+        },
+        {
+          "rule_ids": [
+            "BRAND-604"
+          ],
+          "issue": "No tracked URL"
+        },
+        {
+          "rule_ids": [
+            "BRAND-401"
+          ],
+          "issue": "Needs massive simplification for consumer audience \u2014 jargon-heavy"
+        }
+      ]
+    },
+    {
+      "asset_id": "SRC-003",
+      "title": "BOGO Holiday Campaign \u2014 Creative Messaging",
+      "asset_type": "campaign_messaging",
+      "target_campaign": "Q4 2026 Holiday BOGO Blitz",
+      "target_audience": "Consumer (General)",
+      "approved_channels": [
+        "SMS",
+        "email",
+        "Facebook/Instagram",
+        "landing_page"
+      ],
+      "associated_offer_ids": [
+        "OFF-004"
+      ],
+      "status": "draft",
+      "source_content": "\ud83c\udf84 HOLIDAY BLOWOUT! BUY ONE iPHONE 17, GET ONE ABSOLUTELY FREE! \ud83c\udf84\n\nTHIS IS NOT A DRILL! \ud83d\udea8\n\nNovaTel's BIGGEST deal of the year is HERE and it WON'T LAST. Get TWO iPhone 17s for the price of ONE. That's right \u2014 the second phone is 100% FREE. No strings attached. No catch. No joke.\n\n\ud83d\udd25 UNBEATABLE VALUE:\n\u2022 Two iPhone 17s \u2014 over $1,800 in phones for just $899\n\u2022 America's #1 rated 5G network\n\u2022 Unlimited everything \u2014 data, talk, text, the works\n\u2022 FREE overnight shipping \u2014 get them before Christmas!\n\n\u23f0 HURRY \u2014 LIMITED TIME ONLY! This offer ends when inventory runs out. Don't be the person who misses out. Your family deserves the best, and NovaTel delivers. GUARANTEED.\n\n\ud83d\udca5 ACT NOW: Click here to claim your BOGO deal before they're gone!\n\nNovaTel \u2014 The Revolutionary Leader in Wireless",
+      "claims_made": [
+        "Buy one get one free",
+        "Second phone 100% free",
+        "No strings attached",
+        "Two phones for $899",
+        "#1 rated 5G network",
+        "Unlimited everything",
+        "Guaranteed delivery"
+      ],
+      "known_violations_for_eval": [
+        {
+          "rule_ids": [
+            "BRAND-103"
+          ],
+          "issue": "All-caps headline"
+        },
+        {
+          "rule_ids": [
+            "BRAND-102"
+          ],
+          "issue": "Multiple urgency violations: 'NOT A DRILL', 'HURRY', 'LIMITED TIME ONLY', 'ACT NOW', 'won't last'"
+        },
+        {
+          "rule_ids": [
+            "FTC-019",
+            "BRAND-804"
+          ],
+          "issue": "BOGO: no disclosure of new line req, bill credits, 36-mo installment, early cancel penalty, activation fee"
+        },
+        {
+          "rule_ids": [
+            "BRAND-303"
+          ],
+          "issue": "'no strings attached' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "FTC-017",
+            "BRAND-702"
+          ],
+          "issue": "'#1 rated 5G' \u2014 no source cited"
+        },
+        {
+          "rule_ids": [
+            "FTC-007",
+            "BRAND-301"
+          ],
+          "issue": "'unlimited everything' \u2014 no deprioritization/hotspot/video disclosure"
+        },
+        {
+          "rule_ids": [
+            "BRAND-305"
+          ],
+          "issue": "'guaranteed' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-315",
+            "BRAND-603"
+          ],
+          "issue": "'Click here' \u2014 prohibited CTA"
+        },
+        {
+          "rule_ids": [
+            "BRAND-306"
+          ],
+          "issue": "'revolutionary' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-101"
+          ],
+          "issue": "Tone is aggressive and pushy \u2014 violates brand voice"
+        },
+        {
+          "rule_ids": [
+            "FTC-005",
+            "BRAND-302"
+          ],
+          "issue": "'FREE' used 3 times without adjacent disclosures"
+        },
+        {
+          "rule_ids": [
+            "BRAND-604"
+          ],
+          "issue": "No tracked URL"
+        }
+      ]
+    },
+    {
+      "asset_id": "SRC-004",
+      "title": "5G Home Internet Launch \u2014 Press Release Draft",
+      "asset_type": "press_release_draft",
+      "target_campaign": "5G Home Internet National Rollout",
+      "target_audience": "Media / Consumer (General)",
+      "approved_channels": [
+        "press_release"
+      ],
+      "associated_offer_ids": [
+        "OFF-011"
+      ],
+      "status": "draft",
+      "source_content": "FOR IMMEDIATE RELEASE\n\nNovaTel Launches Game-Changing 5G Home Internet \u2014 Starting at Just $25/mo\n\nDALLAS, TX \u2014 July 15, 2026 \u2014 NovaTel Wireless today announced the nationwide rollout of its disruptive 5G Home Internet service, delivering blazing-fast speeds to homes across America at an industry-leading price point.\n\nStarting at just $25 per month, NovaTel 5G Home Internet empowers households to ditch their legacy cable or DSL connections and experience truly unlimited home broadband with no data caps and no annual contracts.\n\n\"This is the future of home connectivity,\" said Sarah Chen, NovaTel Chief Marketing Officer. \"We're leveraging our extensive 5G infrastructure to bring affordable, high-speed internet to communities that have been underserved by traditional ISPs.\"\n\nKey highlights:\n\u2022 Download speeds up to 1 Gbps\n\u2022 No data caps or throttling\n\u2022 No annual contract \u2014 cancel anytime\n\u2022 Self-install in under 15 minutes\n\u2022 Available in 200+ markets at launch\n\nNovaTel's 5G Home Internet represents a paradigm shift in residential broadband, seamlessly replacing legacy wired connections with next-generation wireless performance.\n\nThe service is available starting today. Visit novatel.com/home to check availability.\n\nAbout NovaTel Wireless\nNovaTel Wireless is America's fastest-growing wireless carrier, serving over 50 million customers with award-winning 5G coverage across 300+ cities.\n\nMedia Contact: press@novatel.com",
+      "claims_made": [
+        "Starting at $25/mo",
+        "Nationwide rollout",
+        "Truly unlimited \u2014 no data caps",
+        "Speeds up to 1 Gbps",
+        "No annual contract",
+        "Self-install in under 15 minutes",
+        "200+ markets",
+        "America's fastest-growing carrier",
+        "50 million customers",
+        "300+ cities"
+      ],
+      "known_violations_for_eval": [
+        {
+          "rule_ids": [
+            "BRAND-309"
+          ],
+          "issue": "'game-changing' in headline \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-313"
+          ],
+          "issue": "'disruptive' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-310"
+          ],
+          "issue": "'industry-leading' \u2014 no source"
+        },
+        {
+          "rule_ids": [
+            "BRAND-311"
+          ],
+          "issue": "'empowers' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-307"
+          ],
+          "issue": "'leveraging' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-308"
+          ],
+          "issue": "'seamlessly' \u2014 prohibited"
+        },
+        {
+          "rule_ids": [
+            "FTC-018"
+          ],
+          "issue": "'starting at $25/mo' \u2014 requires eligible phone plan bundle, standalone is $50/mo"
+        },
+        {
+          "rule_ids": [
+            "FTC-009",
+            "FTC-010"
+          ],
+          "issue": "'up to 1 Gbps' \u2014 typical is 72-245 Mbps per offer registry"
+        },
+        {
+          "rule_ids": [
+            "BRAND-701",
+            "BRAND-702"
+          ],
+          "issue": "'fastest-growing carrier' \u2014 no source cited"
+        },
+        {
+          "rule_ids": [
+            "BRAND-406"
+          ],
+          "issue": "Press release has informal CTA-like language; should end with 'For more information' format"
+        },
+        {
+          "rule_ids": [
+            "BRAND-208"
+          ],
+          "issue": "Implied nationwide coverage \u2014 service is in 200+ markets, not nationwide"
+        }
+      ]
+    },
+    {
+      "asset_id": "SRC-005",
+      "title": "Student Back-to-School Campaign \u2014 Event Brief",
+      "asset_type": "event_brief",
+      "target_campaign": "Q3 2026 Back-to-School Student Push",
+      "target_audience": "Consumer (General) \u2014 Students 18-24",
+      "approved_channels": [
+        "SMS",
+        "Instagram",
+        "email"
+      ],
+      "associated_offer_ids": [
+        "OFF-015"
+      ],
+      "status": "draft",
+      "source_content": "\ud83c\udf93 STUDENTS: Half-Off Unlimited for Your Entire College Career! \ud83c\udf93\n\nHey there! \ud83d\udc4b College is expensive enough \u2014 your phone plan shouldn't be.\n\nNovaTel's Student Unlimited plan gives you EVERYTHING for just $37.99/mo:\n\u2022 Unlimited data, talk, and text\n\u2022 30GB hotspot so you can work from literally anywhere\n\u2022 Access to NovaTel's robust 5G network on campus and beyond\n\nThat's 50% off our regular price. For FOUR YEARS. No joke.\n\nAnd here's the best part \u2014 no contracts, no activation fees, no BS. Just fast, reliable wireless that works as hard as you do.\n\nYour parents are still paying for Verizon's overpriced garbage tier? Tell them to chill. You've got this.\n\nPro tip: Stack this with our BOGO deal and get your roommate on NovaTel too. Synergy! \ud83e\udd1d\n\nSign up in 2 minutes flat \u2192 novatel.com/student\n\nLimited spots available \u2014 ACT NOW before your campus allocation fills up!",
+      "claims_made": [
+        "50% off for 4 years",
+        "$37.99/mo",
+        "Unlimited data, talk, text",
+        "30GB hotspot",
+        "No contracts",
+        "No activation fees",
+        "Limited spots available"
+      ],
+      "known_violations_for_eval": [
+        {
+          "rule_ids": [
+            "FTC-020"
+          ],
+          "issue": "No disclosure that price reverts to $75.99/mo after 48 months or if verification fails"
+        },
+        {
+          "rule_ids": [
+            "BRAND-301",
+            "FTC-007"
+          ],
+          "issue": "'unlimited data' without deprioritization disclosure (75GB threshold)"
+        },
+        {
+          "rule_ids": [
+            "BRAND-312"
+          ],
+          "issue": "'robust' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-314"
+          ],
+          "issue": "'synergy' \u2014 prohibited word"
+        },
+        {
+          "rule_ids": [
+            "BRAND-102"
+          ],
+          "issue": "'ACT NOW' \u2014 urgency pressure tactic"
+        },
+        {
+          "rule_ids": [
+            "BRAND-106"
+          ],
+          "issue": "References competitor (Verizon) by name dismissively \u2014 violates humor policy"
+        },
+        {
+          "rule_ids": [
+            "BRAND-704"
+          ],
+          "issue": "Names competitor directly in advertising"
+        },
+        {
+          "rule_ids": [
+            "BRAND-101"
+          ],
+          "issue": "Tone too casual/flippant for brand voice ('no BS', 'Tell them to chill')"
+        },
+        {
+          "rule_ids": [
+            "BRAND-604"
+          ],
+          "issue": "No tracked URL (no UTM parameters)"
+        },
+        {
+          "rule_ids": [
+            "BRAND-404"
+          ],
+          "issue": "'Limited spots available' \u2014 may be false scarcity if not provably true"
+        },
+        {
+          "rule_ids": [
+            "FTC-004"
+          ],
+          "issue": "Video streaming limit (720p) not disclosed"
+        }
+      ]
+    }
+  ]
+}
