@@ -38,7 +38,7 @@ content. A **User Gate** then lets a human accept, edit, or re-run.
 
 - **Backend** — Python 3.10+, FastAPI + Uvicorn, LangGraph, LangChain, Pydantic v2
 - **Frontend** — React 18 + TypeScript + Vite 5, react-router-dom v6
-- **LLM** — OpenAI or Azure OpenAI (`gpt-4o-mini` class, function-calling, `temperature=0`)
+- **LLM** — Azure OpenAI (`gpt-5.4-beta` deployment, function-calling, `temperature=0`); also supports OpenAI
 - **Data** — JSON + CSV ground truth in [backend/app/data/](backend/app/data/) (FCC/FTC rules, brand bible, 15-offer registry, channel matrix, eval samples)
 
 ## Repo layout
@@ -183,7 +183,9 @@ Env vars (see `backend/.env.example`):
 |---|---|---|
 | `OPENAI_API_KEY` | _unset_ | enables OpenAI mode |
 | `AZURE_OPENAI_API_KEY` / `AZURE_OPENAI_ENDPOINT` / `AZURE_OPENAI_DEPLOYMENT` | _unset_ | enables Azure OpenAI mode |
-| `GUARDIAN_MODEL` | `gpt-4o-mini` | model name |
+| `OPENAI_MODEL` | `gpt-4o-mini` | OpenAI model name (only used when `OPENAI_API_KEY` is set) |
+| `AZURE_OPENAI_DEPLOYMENT` | _unset_ | Azure deployment name (e.g. `gpt-5.4-beta`) |
+| `AZURE_OPENAI_API_VERSION` | `2024-12-01-preview` | Azure API version |
 | `GUARDIAN_MAX_ITERATIONS` | `1` | iteration cap (raise to 3 for full convergence demos) |
 | `GUARDIAN_BLOCK_ON` | `HARD` | what counts as blocking (`HARD` or `ALL`) |
 | `GUARDIAN_CORS_ORIGINS` | `http://127.0.0.1:5173,http://localhost:5173` | CORS allowlist |

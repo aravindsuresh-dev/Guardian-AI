@@ -154,7 +154,7 @@ agent pipeline never "ships" without human dispatch.
                        ┌────────▼────────┐         ┌─────────────▼─────────────┐         ┌────────▼────────┐
                        │  Skills         │         │  LLM Client               │         │  Data           │
                        │  (deterministic)│         │  OpenAI / Azure OpenAI    │         │  (JSON + CSV)   │
-                       │                 │         │  gpt-4o-mini, temp=0      │         │  @lru_cache     │
+                       │                 │         │  gpt-5.4-beta, temp=0     │         │  @lru_cache     │
                        │  - compliance   │         │  function-calling         │         │                 │
                        │  - offer_ver    │         │                           │         │  - rules        │
                        │  - content_an   │         └───────────────────────────┘         │  - brand book   │
@@ -828,7 +828,7 @@ unnecessary edit cycle.
 - **Python 3.10+**, FastAPI, Uvicorn (ASGI).
 - **LangGraph** for the state machine; **LangChain** for LLM client + tool binding.
 - **Pydantic v2** for strict typed state and request/response models.
-- **OpenAI / Azure OpenAI**, `gpt-4o-mini` class, `temperature=0`, function-calling.
+- **Azure OpenAI**, `gpt-5.4-beta` deployment (also supports OpenAI), `temperature=0`, function-calling.
 - Pytest for smoke + eval.
 
 ### Frontend
@@ -953,14 +953,14 @@ setting we'd add a second provider as failover.
 
 ### Q: Latency budget?
 - Intake: ~50ms (deterministic).
-- 5 critics in parallel: 3–5s with `gpt-4o-mini` and 5–8 tool calls each.
+- 5 critics in parallel: 3–5s with `gpt-5.4-beta` and 5–8 tool calls each.
 - Resolver: 2–4s.
 - Per round wall clock: 5–9s. End-to-end for a 3-round case: 15–25s.
 
 ### Q: Cost?
 - ~5–8 tool calls × 5 critics × 200–500 tokens each = 5–10k input + 1–2k
   output tokens per round.
-- At `gpt-4o-mini` rates this is fractions of a cent per review.
+- At `gpt-5.4-beta` rates this is fractions of a cent per review.
 
 ### Q: What's the verdict's truth model?
 For HARD violations: structurally provable (registry mismatch, char limit

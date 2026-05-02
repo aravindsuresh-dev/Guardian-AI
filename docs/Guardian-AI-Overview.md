@@ -180,7 +180,7 @@ and either accept it as final, edit it, or fire another adversarial round.
 - **LangGraph** — state machine for the multi-agent loop
 - **LangChain** — LLM client abstraction + tool-calling
 - **Pydantic v2** — typed state, request/response models
-- **OpenAI / Azure OpenAI** — `gpt-4o-mini` class model, chat completions with
+- **Azure OpenAI** — `gpt-5.4-beta` deployment (also supports OpenAI), chat completions with
   tool-calling
 - **Pytest** — smoke + eval harness
 

@@ -90,7 +90,7 @@ State is a Pydantic model carrying iterations, prior approvals, audit trail.
 - FastAPI + Uvicorn (REST + WebSocket)
 - LangGraph (state machine), LangChain (LLM client + tool calling)
 - Pydantic v2
-- OpenAI / Azure OpenAI (`gpt-4o-mini` class, chat-completions w/ tools)
+- Azure OpenAI (`gpt-5.4-beta` deployment) — also supports OpenAI; chat-completions w/ tools
 - Pytest (smoke + eval harness in `backend/app/eval/`)
 
 ### Frontend
