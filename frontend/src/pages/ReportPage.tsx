@@ -10,7 +10,7 @@ import { compositeScore, fmtElapsed, iterationScore, scoreColor } from "../util/
 
 export default function ReportPage() {
   const nav = useNavigate();
-  const { request, final, iterations, startedAt, selectedFinal } = useReview();
+  const { request, final, iterations, startedAt, selectedFinal, originalContent } = useReview();
 
   // If user lands here directly, bounce home.
   if (!request || (!final && iterations.length === 0)) {
@@ -30,6 +30,7 @@ export default function ReportPage() {
     || final?.final_content
     || iterations[iterations.length - 1]?.revised_content
     || request.content;
+  const beforeContent = originalContent ?? request.content;
   const converged = !!final?.converged;
   const lastIter = iterations[iterations.length - 1];
   const lastScore = lastIter ? iterationScore(lastIter) : compositeScore([]);
@@ -117,7 +118,7 @@ export default function ReportPage() {
 
         <section className="card">
           <h3>Before / After</h3>
-          <DiffView before={request.content} after={finalContent} />
+          <DiffView before={beforeContent} after={finalContent} />
         </section>
 
         <section className="card">

@@ -10,9 +10,10 @@ const CHANNEL_ICON: Record<string, string> = {
   press_release: "📰",
 };
 
-export function OriginalContentPanel({ request }: { request: ReviewRequest }) {
+export function OriginalContentPanel({ request, content }: { request: ReviewRequest; content?: string }) {
   const channel = request.channel || "SMS";
   const audience = request.audience || "—";
+  const text = content ?? request.content;
   return (
     <aside className="left-panel">
       <h3>Original</h3>
@@ -22,9 +23,9 @@ export function OriginalContentPanel({ request }: { request: ReviewRequest }) {
       </div>
       {request.offer_id && <div className="pill offer-pill">🏷️ {request.offer_id}</div>}
       <div className="orig-label">Content reviewed</div>
-      <pre className="orig-content">{request.content}</pre>
+      <pre className="orig-content">{text}</pre>
       <div className="orig-meta">
-        <div><span className="muted">chars</span> {request.content.length}</div>
+        <div><span className="muted">chars</span> {text.length}</div>
       </div>
     </aside>
   );

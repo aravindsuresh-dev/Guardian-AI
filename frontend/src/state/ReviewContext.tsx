@@ -11,6 +11,9 @@ interface Ctx {
   request: ReviewRequest | null;
   setRequest: (r: ReviewRequest) => void;
 
+  /** The first-submitted content. Stays fixed across reruns. */
+  originalContent: string | null;
+
   status: Status;
   startedAt: number | null;
   roundStartedAt: number | null;
@@ -37,6 +40,7 @@ const ReviewCtx = createContext<Ctx | null>(null);
 
 export function ReviewProvider({ children }: { children: ReactNode }) {
   const [request, setRequestState] = useState<ReviewRequest | null>(null);
+  const [originalContent, setOriginalContent] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [startedAt, setStartedAt] = useState<number | null>(null);
   const [roundStartedAt, setRoundStartedAt] = useState<number | null>(null);
@@ -65,6 +69,7 @@ export function ReviewProvider({ children }: { children: ReactNode }) {
     setFinal(null);
     setError(null);
     setSelectedFinal(null);
+    setOriginalContent(null);
     iterCountRef.current = 0;
   }, []);
 
@@ -115,6 +120,7 @@ export function ReviewProvider({ children }: { children: ReactNode }) {
 
   const start = useCallback(() => {
     if (!request) return;
+    setOriginalContent(request.content);
     openStream(request, /* preserveHistory */ false);
   }, [request, openStream]);
 
@@ -134,11 +140,12 @@ export function ReviewProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<Ctx>(() => ({
     request, setRequest,
+    originalContent,
     status, startedAt, roundStartedAt,
     intake, iterations, liveCritics, auditTrail, final, error,
     selectedFinal, setSelectedFinal,
     start, rerun, cancel, reset,
-  }), [request, setRequest, status, startedAt, roundStartedAt, intake, iterations, liveCritics, auditTrail, final, error, selectedFinal, start, rerun, cancel, reset]);
+  }), [request, setRequest, originalContent, status, startedAt, roundStartedAt, intake, iterations, liveCritics, auditTrail, final, error, selectedFinal, start, rerun, cancel, reset]);
 
   return <ReviewCtx.Provider value={value}>{children}</ReviewCtx.Provider>;
 }

@@ -12,7 +12,7 @@ export default function ReviewPage() {
   const nav = useNavigate();
   const {
     request, status, intake, iterations, liveCritics, error, start, rerun,
-    setSelectedFinal,
+    setSelectedFinal, originalContent,
   } = useReview();
 
   // If user lands here without a request (e.g. direct nav), bounce home.
@@ -32,9 +32,10 @@ export default function ReviewPage() {
 
   // Build the version list: original input + each round's rewrite (if any).
   // The user can pick any of these as the basis for accept/edit/rerun.
+  const baseOriginal = originalContent ?? request.content;
   const versions = useMemo<VersionOption[]>(() => {
     const list: VersionOption[] = [
-      { id: "original", label: "Original", content: request.content },
+      { id: "original", label: "Original", content: baseOriginal },
     ];
     iterations.forEach((it) => {
       const rewrite = it.revised_content?.trim();
@@ -47,7 +48,7 @@ export default function ReviewPage() {
       }
     });
     return list;
-  }, [request.content, iterations]);
+  }, [baseOriginal, iterations]);
 
   const acceptFinal = (content: string) => {
     setSelectedFinal(content);
@@ -117,7 +118,7 @@ export default function ReviewPage() {
         ref={gridRef as any}
         style={{ gridTemplateColumns: `${leftW}px 6px minmax(0, 1fr) 6px ${rightW}px` }}
       >
-        <OriginalContentPanel request={request} />
+        <OriginalContentPanel request={request} content={baseOriginal} />
 
         <div className="pane-resizer" onMouseDown={startDrag("left")} role="separator" aria-orientation="vertical" />
 
@@ -140,7 +141,7 @@ export default function ReviewPage() {
         <ResolverPanel
           iterations={iterations}
           running={running}
-          originalContent={request.content}
+          originalContent={baseOriginal}
         />
       </main>
 
