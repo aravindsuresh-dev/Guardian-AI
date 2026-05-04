@@ -11,9 +11,6 @@ content. A **User Gate** then lets a human accept, edit, or re-run.
 
 📖 **Documentation**
 - [docs/Guardian-AI-Overview.md](docs/Guardian-AI-Overview.md) — narrative summary
-- [docs/Guardian-AI-Worked-Example.md](docs/Guardian-AI-Worked-Example.md) — one SMS submission traced end-to-end through every layer
-- [docs/Guardian-AI-Architect-Deep-Dive.md](docs/Guardian-AI-Architect-Deep-Dive.md) — full architect-grade walkthrough
-- [GuardianAI-ProjectContext.md](GuardianAI-ProjectContext.md) — quick in-IDE context
 
 ---
 
