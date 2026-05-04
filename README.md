@@ -11,6 +11,7 @@ content. A **User Gate** then lets a human accept, edit, or re-run.
 
 📖 **Documentation**
 - [docs/Guardian-AI-Overview.md](docs/Guardian-AI-Overview.md) — narrative summary
+- [docs/Guardian-AI-Worked-Example.md](docs/Guardian-AI-Worked-Example.md) — one SMS submission traced end-to-end through every layer
 - [docs/Guardian-AI-Architect-Deep-Dive.md](docs/Guardian-AI-Architect-Deep-Dive.md) — full architect-grade walkthrough
 - [GuardianAI-ProjectContext.md](GuardianAI-ProjectContext.md) — quick in-IDE context
 
@@ -151,6 +152,13 @@ Open the UI, pick a channel + audience, paste content, hit **Run Review**.
 Watch the 5 critic cards stream verdicts in real time, see the Resolver
 rewrite, then accept / edit / re-run via the User Gate.
 
+- The 3-pane review layout (Original · Courtroom · Resolver) is **resizable**;
+  drag the vertical handles between panes. Widths persist in `localStorage`.
+- The **User Gate** lets you pick any prior version (Original or any round's
+  rewrite) as the basis for accept / edit-and-rerun / another round. The
+  original content is preserved across re-runs so the report's Before/After
+  diff always compares the true first input against the final output.
+
 Or hit the API directly:
 
 ```bash
@@ -223,15 +231,6 @@ python -m app.eval.run_eval
 Reports precision / recall / F1 per `rule_id` against the planted violations
 in `violation_content_samples.json`. Use this as the regression bar when
 changing prompts or deterministic fallbacks.
-
-## Roadmap
-
-- Inline diff highlighting with rule_id spans
-- Persistent audit storage (Postgres) for compliance auditors
-- Multi-tenant brand bible support
-- Custom rule authoring UI
-- Image OCR + visual disclosure-proximity check
-- Continuous-eval harness wired into CI
 
 ---
 
